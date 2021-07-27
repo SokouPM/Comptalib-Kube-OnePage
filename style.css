@@ -1,5 +1,20 @@
+@font-face {
+	font-family: "Avenir Next LT Pro";
+	src: url('/sources/fonts/26301410506.ttf');
+}
+@font-face {
+	font-family: "Avenir Next LT Pro";
+	font-style: italic;
+	src: url('/sources/fonts/25728576873.ttf');
+}
+@font-face {
+	font-family: "Avenir Next LT Pro";
+	font-weight: bold;
+	src: url('/sources/fonts/25381880192.ttf');
+}
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Avenir Next LT Pro"f;
     margin: 0;
     padding: 0;
     --color-1: #1656FF;
