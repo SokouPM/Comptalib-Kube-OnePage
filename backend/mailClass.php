@@ -70,6 +70,6 @@ class Mail
                     </div>
             ';  // nl2br : take line breaks into account
 
-        mail("marquet_pierre@yahoo.fr", "Demande de contact pack " . $mail["pack"], $mailText, $header);
+        mail("gb@kubewebagence.com", "Demande de contact pack " . $mail["pack"], $mailText, $header);
     }
 }
