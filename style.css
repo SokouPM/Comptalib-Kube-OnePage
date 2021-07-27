@@ -247,6 +247,7 @@ header #contactUs:hover {
     flex-direction: column;
     text-align: center;
     padding: 0 200px;
+    margin-top: 150px;
 }
 
 #Our3packs p {
@@ -446,6 +447,32 @@ header #contactUs:hover {
     padding-left: 20.5%;
 }
 
+.carousel-item-end div:first-child .card:first-child,  .carousel-item-start div:last-child .card:last-child {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.carousel-item-end div:last-child .card:last-child, .carousel-item-start div:first-child .card:first-child {
+    animation: fadeOut 0.7s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 #Ourproductions a img {
     height: 50px;
 }
@@ -478,7 +505,7 @@ header #contactUs:hover {
 #Ourengagements #icons {
     display: flex;
     justify-content: center;
-    width: 660px;
+    min-width: 668px;
     background: url(/sources/forms/Forme3.png) bottom no-repeat;
     margin-bottom: 125px;
 }
@@ -493,6 +520,11 @@ header #contactUs:hover {
     align-items: center;
     justify-content: center;
     margin: 40px 20px;
+    padding-top: 15px;
+}
+
+#Ourengagements #icons div div img{
+    width: 90px;
 }
 
 #Ourengagements #icons #column1 div:nth-child(1) {
@@ -552,6 +584,7 @@ header #contactUs:hover {
 #WhatClientsSay {
     background: url(/sources/forms/Forme6.png) no-repeat;
     margin-bottom: 0;
+    margin-top: 200px;
     padding-bottom: 70px;
 }
 
