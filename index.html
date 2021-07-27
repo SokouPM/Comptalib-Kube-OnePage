@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comptalib X Kube OnePage</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/libraries/bootstrap5-carousel-multi-main/style.css" />
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <header>
+        <p id="specialWebOffer">Offre spéciale web</p>
+        <div id="twoLogos">
+            <img src="/sources/logos/LogoComptalib.png" alt="Logo Comptalib">
+            <i id="plus" class="fas fa-plus"></i>
+            <img src="/sources/logos/LogoKube.png" alt="Logo Kube">
+        </div>
+        <div>
+            <button id="contactNumber"><i class="fas fa-phone-alt"></i> 06 08 06 00 68</button>
+            <button id="contactUs" onclick="window.location.href='https\:\/\/kubewebagence.com/pages/contactez-nous-kube'">Contactez-nous</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="title">
+            <h1>Une solution simple et efficace.</h1>
+            <p>En partenariat avec Comptalib, Kube vous propose 3 packs très accessibles pour créer votre site web.</p>
+        </section>
+
+        <section id="contactForm">
+            <div id="specialDiscount">
+                <img src="/sources/images/VisuelRestaurant1.png" alt="Site Maison du burger">
+                <h2>Réduction spéciale</h2>
+                <p>Pour ce partenariat avec Comptalib, nous vous offrons <strong>-15 %</strong> sur tous nos packs
+                    jusqu’au <strong>31 aout
+                        2021</strong>.
+                </p>
+                <button>Remplir le formulaire</button>
+            </div>
+            <div id="form">
+                <h2>Vous êtes interessé ? <br> Contactez-nous !</h2>
+                <form action="/backend/mail.php" method="POST">
+                    <p>Quel type de site ?</p>
+                    <div id="inputRadio">
+                        <div>
+                            <input type="radio" id="Redesign" name="pack" value="Redesign" checked>
+                            <label for="Redesign">Refonte</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="E-commerce" name="pack" value="E-commerce">
+                            <label for="E-commerce">E-Commerce</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="Showcase" name="pack" value="Showcase">
+                            <label for="Showcase">Vitrine</label>
+                        </div>
+                    </div>
+                    <input type="text" id="name" name="name" placeholder="Nom" required>
+                    <input type="text" id="mail" name="mail" placeholder="Email" required>
+                    <input type="text" id="phone" name="phone" placeholder="Téléphone" required>
+                    <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
+                    <input type="submit" id="submit" value="Envoyer">
+                </form>
+            </div>
+        </section>
+
+        <section id="Our3packs">
+            <h1><span class="darkerWordTitle">Nos</span> 3 packs</h1>
+            <p>Votre site web sur-mesure avec Kube c’est le choix d’une formule clé en<br> main pour un site unique,
+                performant et responsive.</p>
+            <div id="packs">
+                <div id="redesignPack">
+                    <img src="/sources/images/Packrefonte.png" alt="Pack refonte">
+                    <div class="pack">
+                        <h2>PACK REFONTE</h2>
+                        <div class="packContent">
+                            <ul>
+                                <li>Refonte de votre site</li>
+                                <li>Design sur-mesure</li>
+                                <li>Responsive design</li>
+                                <li>Responsive design &</li>
+                                <li>Optimisation UX</li>
+                                <li>Formulaire de contact</li>
+                                <li>Synchronisation réseaux sociaux</li>
+                                <li>Livré sous 14 jours</li>
+                            </ul>
+                            <button onclick="window.location.href='https\:\/\/kubewebagence.com/collections/pack-creation-site-internet/products/site-one-page'">900€ HT</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="ecommercePack">
+                    <img src="/sources/images/PackE-commerce.png" alt="Pack e-commerce">
+                    <div class="pack">
+                        <h2>PACK E-COMMERCE</h2>
+                        <div class="packContent">
+                            <ul>
+                                <li>Création site e-commerce</li>
+                                <li>Nombre de pages illimitées</li>
+                                <li>Design sur-mesure</li>
+                                <li>Responsive Design & Optimisation UX</li>
+                                <li>Synchronisation Hébergement</li>
+                                <li>Formulaire de contact</li>
+                                <li>Livré sous 28 jours</li>
+                            </ul>
+                            <button onclick="window.location.href='https\:\/\/kubewebagence.com/collections/pack-creation-site-internet/products/site-e-commerce'">3 450€ HT</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="showcasePack">
+                    <img src="/sources/images/Packvitrine.png" alt="Pack vitrine">
+                    <div class="pack">
+                        <h2>PACK VITRINE</h2>
+                        <div class="packContent">
+                            <ul>
+                                <li>Création site vitrine</li>
+                                <li>Jusqu’à 15 pages</li>
+                                <li>Design sur-mesure</li>
+                                <li>Responsive design & Optimisation UX</li>
+                                <li>Synchronisation Hébergement</li>
+                                <li>Formulaire de contact</li>
+                                <li>Livré sous 21 jours</li>
+                            </ul>
+                            <button onclick="window.location.href='https\:\/\/kubewebagence.com/collections/pack-creation-site-internet/products/site-vitrine'">3 450€ HT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="KubeWhatIsIt">
+            <img src="/sources/images/Forme&photo.png" alt="Kube">
+            <div id="description">
+                <h2>KUBE, c’est quoi ?</h2>
+                <p>Kube est une agence digitale d’experts en ligne dédiée aux particuliers, TPE et PME qui
+                    souhaitent se
+                    développer sur le web.</p>
+                <a href="#">En savoir plus ></a>
+            </div>
+        </section>
+
+        <section id="Ourproductions">
+            <h2><span class="darkerWordTitle">Nos</span> réalisations</h2>
+            <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="/sources/images/EdgardParis.png" alt="site web Edgard Paris">
+                                <p>Edgard Paris</p>
+                                <a class="websiteLink" href="https://edgardparis.com/">edgardparis.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="/sources/images/lesparapluies.png" alt="site web Les Parapluies">
+                                <p>Les Parapluies</p>
+                                <a class="websiteLink" href="https://lesparapluies.fr/">lesparapluies.fr</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="/sources/images/SiteMakerz.png" alt="site web Makerz Agency">
+                                <p>Makerz Agency</p>
+                                <a class="websiteLink" href="https://makerzagency.com/">makerzagency.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="prev">
+                    <img src="/sources/icons/back.png" alt="previous">
+                </a>
+                <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="next">
+                    <img src="/sources/icons/next.png" alt="next">
+                </a>
+            </div>
+        </section>
+
+        <section id="Ourengagements">
+            <div id="text">
+                <h2><span class="darkerWordTitle">Nos</span> engagements</h2>
+                <div>Nos packs sont clé en main, vous ne vous occupez<br> de rien, nous assurons la réalisation de
+                    votre
+                    site<br> de A à Z. Nous nous engageons à vos côtés sur<br> votre projet digital pour vous
+                    fournir un
+                    service<br> qui réponde à vos exigences.</div>
+            </div>
+            <div id="icons">
+                <div id="column1">
+                    <div id="Rapidite">
+                        <img src="/sources/icons/Rapidite.png" alt="">
+                        <p>Rapidité</p>
+                    </div>
+                    <div id="Liberte">
+                        <img src="/sources/icons/Liberte.png" alt="">
+                        <p>Liberté</p>
+                    </div>
+                </div>
+                <div id="column2">
+                    <div id="Simplicite">
+                        <img src="/sources/icons/Simplicite.png" alt="">
+                        <p>Rapidité</p>
+                    </div>
+                    <div id="Exigence">
+                        <img src="/sources/icons/Exigence.png" alt="">
+                        <p>Liberté</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Ourkeyfigures">
+            <h2><span class="darkerWordTitle">Nos</span> chiffres clés</h2>
+            <div>
+                <div>
+                    <img src="/sources/icons/Passionnes.png" alt="">
+                    <p>1 équipe d’experts<br> passionnés<br> du web</p>
+                </div>
+                <div>
+                    <img src="/sources/icons/250sites.png" alt="">
+                    <p>+ de 250 sites<br> web réalisés</p>
+                </div>
+                <div>
+                    <img src="/sources/icons/Clientssatisfaits.png" alt="">
+                    <p>100% clients<br> satisfaits</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="WhatClientsSay">
+            <h2><span class="darkerWordTitle">Ce que nos clients</span><br> disent de nous</h2>
+            <div id="customersOpinionsList">
+                <div class="customerOpinion showcasePack">
+                    <img src="/sources/customers/Michel.png" alt="">
+                    <p class="CustomerName">Michel</p>
+                    <p class="selectedPack"><span class="darkerWordTitle">Pack</span> vitrine</p>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto ab id natus
+                        numquam illo molestias corporis, dolore nulla nesciunt.</p>
+                </div>
+                <div class="customerOpinion ecommercePack">
+                    <img src="/sources/customers/Solene.png" alt="">
+                    <p class="CustomerName">Solène</p>
+                    <p class="selectedPack"><span class="darkerWordTitle">Pack</span> E-commerce</p>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto ab id natus
+                        numquam illo molestias corporis, dolore nulla nesciunt.</p>
+                </div>
+                <div class="customerOpinion redesignPack">
+                    <img src="/sources/customers/Quentin.png" alt="">
+                    <p class="CustomerName">Quentin</p>
+                    <p class="selectedPack"><span class="darkerWordTitle">Pack</span> refonte</p>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto ab id natus
+                        numquam illo molestias corporis, dolore nulla nesciunt.</p>
+                </div>
+                <div class="customerOpinion showcasePack">
+                    <img src="/sources/customers/Edgard.png" alt="">
+                    <p class="CustomerName">Romain</p>
+                    <p class="selectedPack"><span class="darkerWordTitle">Pack</span> vitrine</p>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto ab id natus
+                        numquam illo molestias corporis, dolore nulla nesciunt.</p>
+                </div>
+                <div class="customerOpinion ecommercePack">
+                    <img src="/sources/customers/Marine.png" alt="">
+                    <p class="CustomerName">Marine</p>
+                    <p class="selectedPack"><span class="darkerWordTitle">Pack</span> vitrine</p>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto ab id natus
+                        numquam illo molestias corporis, dolore nulla nesciunt.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="Kubecontact">
+            <div class="info">
+                <div>
+                    <img src="/sources/logos/LogoKube.png" alt="Logo Kube">
+                </div>
+                <a class="websiteLink" href="https://kubewebagence.com/">kubewebagence.com</a>
+                <div class="socialMediaIcons">
+                    <a href="https://www.instagram.com/kubeweb/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/kubewebagence"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.linkedin.com/company/kube-web/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <span class="line"></span>
+            <div class="contact">
+                <p><i class="fas fa-phone-alt"></i> 06 08 06 00 68</p>
+                <p><i class="fas fa-envelope"></i> hello@kubewebagence.com</p>
+            </div>
+        </div>
+        <div id="Comptalibcontact">
+            <div class="info">
+                <div>
+                    <img src="/sources/logos/LogoComptalib.png" alt="Logo Comptalib">
+                </div>
+                <a class="websiteLink" href="https://www.comptalib.com/">comptalib.com</a>
+                <div class="socialMediaIcons">
+                    <a href="https://www.instagram.com/comptalib_com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/comptalib/"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.linkedin.com/company/comptalib/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <span class="line"></span>
+            <p><i class="fas fa-envelope"></i> hello@comptalib.com</p>
+        </div>
+    </footer>
+
+    <script src="/libraries/bootstrap5-carousel-multi-main/assets/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9611474495.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

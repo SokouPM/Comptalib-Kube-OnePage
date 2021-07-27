@@ -1,0 +1,704 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    --color-1: #1656FF;
+    --color-2: #29426F;
+    --color-3: #B213C3;
+    --color-4: #FF6B00;
+    --color-5: #3AD0FF;
+    --color-6: #FDC706;
+    --color-7: #DB2700;
+    --gradient-1: linear-gradient(180deg, #B213C3 0%, #71118F 100%);
+    --gradient-2: linear-gradient(360deg, #1656FF -12.27%, #5CADF3 107.02%);
+    --gradient-3: linear-gradient(180deg, #F9ED86 0%, #FDC708 100%);
+    --gradient-4: linear-gradient(180deg, #FF6B00 0%, #DB2700 100%);
+}
+
+button, input[type=submit] {
+    cursor: pointer;
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+h1, h2 {
+    font-weight: bold;
+    color: var(--color-1);
+    font-size: 48.0057px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.darkerWordTitle {
+    color: var(--color-2);
+}
+
+.card {
+    border: none;
+}
+
+/************* Header *************/
+
+header {
+    background: url("/sources/forms/Forme7.png") no-repeat;
+    height: 152px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+header #specialWebOffer {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    margin-left: 150px;
+    padding-bottom: 50px;
+    color: #FFFFFF;
+}
+
+header img {
+    height: 37.44px;
+}
+
+header #twoLogos {
+    display: flex;
+    align-items: center;
+}
+
+header #plus {
+    padding: 6px;
+    margin: 0 15px;
+    background: #FFFFFF;
+    box-shadow: 1.8718px 1.8718px 6.86325px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    color: var(--color-1);
+}
+
+header button {
+    border: none;
+    width: 178.42px;
+    height: 49.61px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16.0019px;
+    border-radius: 16.0019px;
+}
+
+header #contactNumber {
+    background: #FFFFFF;
+    border: 3.20038px solid var(--color-1);
+    color: var(--color-1);
+    border-radius: 16.0019px;
+}
+
+header #contactNumber:hover {
+    background: var(--color-1);
+    border: none;
+    color: #FFFFFF;
+}
+
+header #contactUs {
+    background: var(--gradient-1);
+    color: #FFFFFF;
+}
+
+header #contactUs:hover {
+    background: #FFFFFF;
+    color: var(--color-3);
+    border: 3.20038px solid var(--color-3);
+}
+
+/************* Section Title *************/
+
+#title {
+    text-align: center;
+}
+
+#title p {
+    color: var(--color-2);
+    font-size: 20.0024px;
+    line-height: 24px;
+}
+
+/************* Section Contact form *************/
+
+#contactForm {
+    background: url("/sources/forms/Forme1.png") no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 300px;
+}
+
+#contactForm #specialDiscount {
+    text-align: center;
+    width: 400px;
+    color: var(--color-1);
+}
+
+#contactForm #specialDiscount h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32.0038px;
+    line-height: 39px;
+    margin: 10px 0;
+}
+
+#contactForm #specialDiscount p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#contactForm #specialDiscount button {
+    margin-top: 10px;
+    width: 245.63px;
+    height: 58.41px;
+    font-size: 16.0019px;
+    border-radius: 16.0019px;
+    background: #FFFFFF;
+    border: 3.20038px solid var(--color-1);
+    color: var(--color-1);
+    border-radius: 16.0019px;
+}
+
+#contactForm #specialDiscount button:hover {
+    background: var(--color-1);
+    border: none;
+    color: #FFFFFF;
+}
+
+#contactForm #form {
+    width: 416.82px;
+    background: #FFFFFF;
+    box-shadow: 2.5443px 2.5443px 12.4335px rgba(0, 0, 0, 0.4);
+    border-radius: 32.0038px;
+}
+
+#contactForm #form h2 {
+    border-radius: 32.0038px 32.0038px 0px 0px;
+    background: var(--gradient-2);
+    font-weight: bold;
+    font-size: 24.0029px;
+    text-align: center;
+    padding: 20px 0;
+    color: #FFFFFF;
+}
+
+#contactForm #form form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+    padding-bottom: 25px;
+}
+
+#contactForm #form form p {
+    font-weight: bold;
+    font-size: 16.0019px;
+    text-align: center;
+    color: var(--color-2);
+    margin: 10px 0;
+}
+
+#contactForm #form form #inputRadio {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#contactForm #form form input:not(#submit), #contactForm #form form textarea {
+    background: rgba(249, 249, 251, 0.2);
+    border: 2.40029px solid #1757FF;
+    border-radius: 14.4017px;
+    padding: 10px;
+    font-size: 16.0019px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+#contactForm #form form #submit {
+    width: 165.75px;
+    height: 46.87px;
+    margin: auto;
+    font-weight: bold;
+    font-size: 20.0024px;
+    color: #FFFFFF;
+    background: var(--gradient-2);
+    border: none;
+    box-shadow: 0px 3.20038px 3.20038px rgba(0, 0, 0, 0.2);
+    border-radius: 16.0019px;
+}
+
+#contactForm #form form #submit:hover {
+    color: var(--color-1);
+    background: #FFFFFF;
+    border: 3.20038px solid var(--color-1);
+}
+
+/************* Section Our 3 packs *************/
+
+#Our3packs {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 200px;
+}
+
+#Our3packs p {
+    font-size: 20.0024px;
+    margin-bottom: 50px;
+}
+
+#Our3packs #packs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Our3packs #packs div .pack h2 {
+    font-weight: bold;
+    font-size: 24.0029px;
+    color: #FFFFFF;
+    border-radius: 32.0038px 32.0038px 0px 0px;
+    padding: 15px 80px;
+    margin-bottom: 0;
+}
+
+#Our3packs #packs div .pack h2 {
+    font-weight: bold;
+    font-size: 24.0029px;
+    color: #FFFFFF;
+    border-radius: 32.0038px 32.0038px 0px 0px;
+    padding: 15px 80px;
+    margin-bottom: 0;
+}
+
+#Our3packs #packs div .pack {
+    box-shadow: 2.40029px 2.40029px 12.8015px rgba(0, 0, 0, 0.4);
+    border-radius: 32.0038px;
+    margin-top: 20px;
+}
+
+#Our3packs #packs div .pack ul {
+    margin-top: 15px;
+}
+
+#Our3packs #packs div .pack ul li {
+    font-size: 16.0019px;
+    line-height: 240.6%;
+    color: var(--color-2);
+}
+
+#Our3packs #packs div .pack button {
+    border-radius: 16.0019px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 17.6021px;
+    border: none;
+    margin: 5px 0 20px 0;
+    width: 130px;
+    height: 60px;
+}
+
+#Our3packs #packs div .pack .packContent {
+    border-radius: 0 0 32.0038px 32.0038px;
+}
+
+#Our3packs #packs #redesignPack div h2, #Our3packs #packs #redesignPack div button {
+    background: var(--gradient-3);
+}
+
+#Our3packs #packs #redesignPack .pack .packContent {
+    border: 3.20038px solid var(--color-6);
+}
+
+#Our3packs #packs #redesignPack .pack button:hover {
+    border: 3.20038px solid var(--color-6);
+    background: none;
+    color: var(--color-6);
+}
+
+#Our3packs #packs #showcasePack .pack button:hover {
+    border: 3.20038px solid var(--color-1);
+    background: none;
+    color: var(--color-1);
+}
+
+#Our3packs #packs #ecommercePack div h2, #Our3packs #packs #ecommercePack div button {
+    background: var(--gradient-4);
+}
+
+#Our3packs #packs #ecommercePack .pack h2 {
+    padding: 25px 90px;
+}
+
+#Our3packs #packs #ecommercePack .pack .packContent {
+    border: 3.20038px solid var(--color-7);
+}
+
+#Our3packs #packs #ecommercePack .pack button:hover {
+    border: 3.20038px solid var(--color-7);
+    background: none;
+    color: var(--color-7);
+}
+
+#Our3packs #packs #ecommercePack .pack .packContent ul li {
+    font-size: 16.0019px;
+    line-height: 300%;
+}
+
+#Our3packs #packs #showcasePack div h2, #Our3packs #packs #showcasePack div button {
+    background: var(--gradient-2);
+}
+
+#Our3packs #packs #showcasePack .pack button:hover {
+    border: 3.20038px solid var(--color-1);
+    background: none;
+    color: var(--color-1);
+}
+
+#Our3packs #packs #showcasePack .pack .packContent {
+    border: 3.20038px solid var(--color-1);
+}
+
+/************* Section Kube, what is it ? *************/
+
+#KubeWhatIsIt {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 150px 0;
+    background: url("/sources/forms/Forme5.png") no-repeat, url("/sources/forms/Forme2.png") no-repeat right;
+}
+
+#KubeWhatIsIt img {
+    height: 509.79px;
+    transform: rotate(-4.22deg);
+}
+
+#KubeWhatIsIt #description {
+    width: 517.16px;
+}
+
+#KubeWhatIsIt #description * {
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+#KubeWhatIsIt #description h2 {
+    font-weight: bold;
+    font-size: 38.4046px;
+    line-height: 47px;
+    text-align: left;
+}
+
+#KubeWhatIsIt #description p, #KubeWhatIsIt #description a {
+    font-size: 19.2023px;
+    line-height: 23px;
+}
+
+#KubeWhatIsIt #description a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#KubeWhatIsIt #description a:hover {
+    text-decoration: underline;
+}
+
+/************* Section Our production *************/
+
+#Ourproductions h2 {
+    font-weight: bold;
+    color: var(--color-1);
+    font-size: 48.0057px;
+}
+
+#Ourproductions, #Ourproductions a:visited {
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-2);
+}
+
+#Ourproductions * {
+    margin-bottom: 20px;
+}
+
+#Ourproductions p {
+    font-size: 24.0029px;
+}
+
+#Ourproductions a {
+    font-size: 16.0019px;
+    text-decoration: none;
+}
+
+#Ourproductions a:hover {
+    text-decoration: underline;
+}
+
+.carousel-inner {
+    padding-left: 20.5%;
+}
+
+#Ourproductions a img {
+    height: 50px;
+}
+
+/************* Section Our engagements *************/
+
+#Ourengagements {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url(/sources/forms/Forme4.png) bottom left no-repeat;
+    padding: 0 250px;
+    margin-bottom: 0;
+}
+
+#Ourengagements #text div, #Ourengagements #icons div div {
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 2.40029px 2.40029px 12.8015px rgba(0, 0, 0, 0.4);
+    border-radius: 32.0038px;
+}
+
+#Ourengagements #text div {
+    font-size: 16.0019px;
+    color: var(--color-2);
+    padding: 50px;
+    line-height: 240.6%;
+}
+
+#Ourengagements #icons {
+    display: flex;
+    justify-content: center;
+    width: 660px;
+    background: url(/sources/forms/Forme3.png) bottom no-repeat;
+    margin-bottom: 125px;
+}
+
+#Ourengagements #icons div div {
+    width: 210.43px;
+    height: 210.43px;
+    font-weight: bold;
+    font-size: 32.0038px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 20px;
+}
+
+#Ourengagements #icons #column1 div:nth-child(1) {
+    color: var(--color-3);
+}
+
+#Ourengagements #icons #column1 div:nth-child(2) {
+    color: var(--color-4);
+}
+
+#Ourengagements #icons #column2 div:nth-child(1) {
+    color: var(--color-1);
+}
+
+#Ourengagements #icons #column2 div:nth-child(2) {
+    color: var(--color-5);
+}
+
+#Ourengagements #icons #column2 {
+    margin-top: 90px;
+    margin-right: 50px;
+}
+
+/************* Section Our key figures *************/
+
+#Ourkeyfigures {
+    padding: 0 250px;
+}
+
+#Ourkeyfigures div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+#Ourkeyfigures div div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Ourkeyfigures div div img {
+    height: 172.46px;
+}
+
+#Ourkeyfigures div div p {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 32.0038px;
+    line-height: 39px;
+    text-align: center;
+    color: var(--color-2);
+}
+
+/************* Section What client say *************/
+
+#WhatClientsSay {
+    background: url(/sources/forms/Forme6.png) no-repeat;
+    margin-bottom: 0;
+    padding-bottom: 70px;
+}
+
+#WhatClientsSay #customersOpinionsList {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#WhatClientsSay #customersOpinionsList .customerOpinion {
+    width: 303.24px;
+    height: 303.24px;
+    padding: 15px;
+    padding-top: 70px;
+    background: #FFFFFF;
+    box-shadow: 2.40029px 2.40029px 12.8015px rgba(0, 0, 0, 0.4);
+    border-radius: 32.0038px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#WhatClientsSay #customersOpinionsList .customerOpinion img {
+    position: absolute;
+    left: auto;
+    right: auto;
+    bottom: 250px;
+    filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.25));
+    height: 95px;
+}
+
+#WhatClientsSay #customersOpinionsList .customerOpinion .CustomerName, #WhatClientsSay #customersOpinionsList .customerOpinion .selectedPack {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#WhatClientsSay #customersOpinionsList .customerOpinion .CustomerName {
+    font-size: 19.2023px;
+}
+
+#WhatClientsSay #customersOpinionsList .customerOpinion .selectedPack {
+    font-size: 14.4017px;
+}
+
+#WhatClientsSay #customersOpinionsList .customerOpinion .message {
+    margin-top: 20px;
+    font-size: 12.8015px;
+    line-height: 240.6%;
+    color: var(--color-2);
+}
+
+.showcasePack {
+    border: 3.20038px solid var(--color-1);
+}
+
+.showcasePack .CustomerName, .showcasePack .selectedPack, .showcasePack .checked {
+    color: var(--color-1);
+}
+
+.ecommercePack {
+    border: 3.20038px solid var(--color-4);
+}
+
+.ecommercePack .CustomerName, .ecommercePack .selectedPack, .ecommercePack .checked {
+    color: var(--color-4);
+}
+
+.redesignPack {
+    border: 3.20038px solid var(--color-6);
+}
+
+.redesignPack .CustomerName, .redesignPack .selectedPack, .redesignPack .checked {
+    color: var(--color-6);
+}
+
+/************* Footer *************/
+
+footer {
+    background: #FFFFFF;
+    box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+}
+
+footer #Kubecontact, footer #Comptalibcontact {
+    background: #FFFFFF;
+    box-shadow: 0.18px 0.18px 12.54px rgba(174, 174, 192, 0.4);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    margin: 30px 10px;
+    padding: 30px;
+}
+
+footer div .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+footer div div div img {
+    height: 30px;
+}
+
+footer div .info a:not(.socialMediaIcons a) {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+footer div .info a:hover:not(.socialMediaIcons a) {
+    text-decoration: underline;
+}
+
+footer div .info .socialMediaIcons a {
+    font-size: 25px;
+    color: var(--color-2);
+}
+
+footer div .info .socialMediaIcons a:visited {
+    color: var(--color-2);
+}
+
+footer div .line {
+    width: 3px;
+    height: 127px;
+    background: var(--color-2);
+    margin: 0 20px;
+}
+
+footer #Kubecontact .contact p, footer #Comptalibcontact p {
+    font-size: 20px;
+    color: var(--color-2);
+}
+
+footer #Kubecontact .contact p:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+footer #Kubecontact .info .websiteLink, footer #Kubecontact .contact i, footer #Kubecontact .info .websiteLink:visited {
+    color: var(--color-3);
+}
+
+footer #Comptalibcontact .info .websiteLink, footer #Comptalibcontact i:not(.socialMediaIcons i), footer #Comptalibcontact .info .websiteLink:visited {
+    color: var(--color-1);
+}
