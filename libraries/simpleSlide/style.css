@@ -1,0 +1,51 @@
+/******************************** * Basics *********************************/
+
+/********************************
+* slide styles
+*********************************/
+
+.slide-items {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.slide-item {
+    flex: 1 0 250px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3d4852;
+    border-radius: 3px;
+}
+
+/********************************
+* Breakpoints
+*********************************/
+
+@media screen and (min-width: 576px) {
+    .slide-item {
+        flex-basis: 300px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .slide-item {
+        flex-basis: 325px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .slide-item {
+        flex-basis: 450px;
+    }
+}

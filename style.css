@@ -139,7 +139,7 @@ header #contactUs:hover {
     border: 3.20038px solid var(--color-3);
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1175px) {
     header {
         padding: 0 1%;
         background-position: left -55px top;
@@ -354,6 +354,7 @@ header #contactUs:hover {
     #contactForm #specialDiscount {
         margin-right: 0;
         margin-bottom: 50px;
+        width: auto;
     }
     #contactForm #specialDiscount img {
         width: 222.25px;
@@ -425,21 +426,21 @@ header #contactUs:hover {
     margin-bottom: 50px;
 }
 
-#Our3packs #packs {
+#Our3packs #packDeskOnly {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#Our3packs #packs .packInfo {
+#Our3packs div .packInfo {
     margin: 0 20px;
 }
 
-#Our3packs #packs .packInfo ul {
+#Our3packs div .packInfo ul {
     padding-left: 1rem;
 }
 
-#Our3packs #packs div .pack h2 {
+#Our3packs div div .pack h2 {
     font-weight: bold;
     font-size: 24.0029px;
     color: #FFFFFF;
@@ -448,23 +449,23 @@ header #contactUs:hover {
     margin-bottom: 0;
 }
 
-#Our3packs #packs div .pack {
+#Our3packs div div .pack {
     box-shadow: 2.40029px 2.40029px 12.8015px rgba(0, 0, 0, 0.4);
     border-radius: 32.0038px;
     margin-top: 20px;
 }
 
-#Our3packs #packs div .pack ul {
+#Our3packs div div .pack ul {
     margin-top: 15px;
 }
 
-#Our3packs #packs div .pack ul li {
+#Our3packs div div .pack ul li {
     font-size: 16.0019px;
     line-height: 240.6%;
     color: var(--color-2);
 }
 
-#Our3packs #packs div .pack button {
+#Our3packs div div .pack button {
     border-radius: 16.0019px;
     color: #FFFFFF;
     font-weight: bold;
@@ -475,76 +476,98 @@ header #contactUs:hover {
     height: 60px;
 }
 
-#Our3packs #packs div .pack .packContent {
+#Our3packs div .pack .packContent {
     border-radius: 0 0 32.0038px 32.0038px;
 }
 
-#Our3packs #packs #redesignPack div h2, #Our3packs #packs #redesignPack div button {
+#Our3packs div #redesignPack div h2, #Our3packs div #redesignPack div button {
     background: var(--gradient-3);
 }
 
-#Our3packs #packs #redesignPack .pack .packContent {
+#Our3packs div #redesignPack .pack .packContent {
     border: 3.20038px solid var(--color-6);
 }
 
-#Our3packs #packs #redesignPack .pack button:hover {
+#Our3packs div #redesignPack .pack button:hover {
     border: 3.20038px solid var(--color-6);
     background: none;
     color: var(--color-6);
 }
 
-#Our3packs #packs #showcasePack .pack button:hover {
+#Our3packs div #showcasePack .pack button:hover {
     border: 3.20038px solid var(--color-1);
     background: none;
     color: var(--color-1);
 }
 
-#Our3packs #packs #ecommercePack div h2, #Our3packs #packs #ecommercePack div button {
+#Our3packs div #ecommercePack div h2, #Our3packs div #ecommercePack div button {
     background: var(--gradient-4);
 }
 
-#Our3packs #packs #ecommercePack .pack h2 {
+#Our3packs div #ecommercePack .pack h2 {
     padding: 25px 90px;
 }
 
-#Our3packs #packs #ecommercePack .pack .packContent {
+#Our3packs div #ecommercePack .pack .packContent {
     border: 3.20038px solid var(--color-7);
 }
 
-#Our3packs #packs #ecommercePack .pack button:hover {
+#Our3packs div #ecommercePack .pack button:hover {
     border: 3.20038px solid var(--color-7);
     background: none;
     color: var(--color-7);
 }
 
-#Our3packs #packs #ecommercePack .pack .packContent ul li {
+#Our3packs div #ecommercePack .pack .packContent ul li {
     font-size: 16.0019px;
     line-height: 300%;
 }
 
-#Our3packs #packs #showcasePack div h2, #Our3packs #packs #showcasePack div button {
+#Our3packs div #showcasePack div h2, #Our3packs div #showcasePack div button {
     background: var(--gradient-2);
 }
 
-#Our3packs #packs #showcasePack .pack button:hover {
+#Our3packs div #showcasePack .pack button:hover {
     border: 3.20038px solid var(--color-1);
     background: none;
     color: var(--color-1);
 }
 
-#Our3packs #packs #showcasePack .pack .packContent {
+#Our3packs div #showcasePack .pack .packContent {
     border: 3.20038px solid var(--color-1);
 }
 
-@media (max-width: 940px) {
-    #Our3packs {
-        margin-top: 70px;
+@media (min-width: 1175px) {
+    #Our3packs #packMobileOnly * {
+        display: none;
     }
-    #Our3packs p {
-        font-size: 11.5035px;
-        margin-bottom: 10px;
+}
+
+@media (max-width: 1175px) {
+    #Our3packs #packDeskOnly * {
+        display: none;
     }
-    /* TODO */
+    #Our3packs #packMobileOnly img {
+        width: 203.43px;
+        height: 143.52px;
+    }
+    #Our3packs #packMobileOnly div .pack, #Our3packs #packMobileOnly #ecommercePack .pack {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    #Our3packs #packMobileOnly div .pack .packContent, #Our3packs #packMobileOnly #ecommercePack .pack .packContent {
+        padding: 0 10px;
+    }
+    #Our3packs #packMobileOnly div .pack h2, #Our3packs #packMobileOnly #ecommercePack .pack h2 {
+        font-size: 17.2246px;
+        line-height: 21px;
+        border-radius: 22.9662px 22.9662px 0px 0px;
+        padding: 15px 0;
+    }
+    #Our3packs #packMobileOnly div .pack ul li, #Our3packs #packMobileOnly #ecommercePack .pack ul li {
+        font-size: 11.5021px;
+        line-height: 240.6%;
+    }
 }
 
 /************* Section Kube, what is it ? *************/
@@ -559,7 +582,6 @@ header #contactUs:hover {
 
 #KubeWhatIsIt img {
     height: 509.79px;
-    transform: rotate(-4.22deg);
 }
 
 #KubeWhatIsIt #description {
@@ -910,6 +932,7 @@ header #contactUs:hover {
     #Ourengagements #text {
         margin-right: 0;
         align-items: center;
+        width: auto;
     }
     #Ourengagements #text h2 {
         position: absolute;
@@ -921,6 +944,7 @@ header #contactUs:hover {
     #Ourengagements #icons {
         margin-bottom: 50px;
         background: none;
+        width: auto;
     }
     #Ourengagements #icons #column1, #Ourengagements #icons #column2 {
         margin-top: 70px;
@@ -986,23 +1010,20 @@ header #contactUs:hover {
     background: url(/sources/forms/Forme6.png) no-repeat;
     margin-bottom: 0;
     margin-top: 200px;
-    padding-bottom: 70px;
 }
 
-#WhatClientsSay #customersOpinionsList {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+#WhatClientsSay h2 {
+    margin-bottom: 50px;
 }
 
-#WhatClientsSay #customersOpinionsList .customerOpinion {
-    min-width: 303.24px;
-    width: 303.24px;
-    height: 303.24px;
-    margin: 0 30px;
-    padding: 15px;
-    padding-top: 70px;
+#WhatClientsSay div .customerOpinion {
+    width: 303px;
+    height: 303px;
+    padding: 20px;
+    margin: 0 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-top: 55px;
     background: #FFFFFF;
     box-shadow: 2.40029px 2.40029px 12.8015px rgba(0, 0, 0, 0.4);
     border-radius: 32.0038px;
@@ -1013,29 +1034,28 @@ header #contactUs:hover {
     position: relative;
 }
 
-#WhatClientsSay #customersOpinionsList .customerOpinion img {
-    position: absolute;
-    left: auto;
-    right: auto;
-    bottom: 250px;
+#WhatClientsSay div .customerOpinion img {
     filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.25));
     height: 95px;
+    position: absolute;
+    top: -50px;
 }
 
-#WhatClientsSay #customersOpinionsList .customerOpinion .CustomerName, #WhatClientsSay #customersOpinionsList .customerOpinion .selectedPack {
+#WhatClientsSay div .customerOpinion .CustomerName, #WhatClientsSay div .customerOpinion .selectedPack {
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-#WhatClientsSay #customersOpinionsList .customerOpinion .CustomerName {
+#WhatClientsSay div .customerOpinion .CustomerName {
     font-size: 19.2023px;
 }
 
-#WhatClientsSay #customersOpinionsList .customerOpinion .selectedPack {
+#WhatClientsSay div .customerOpinion .selectedPack {
     font-size: 14.4017px;
 }
 
-#WhatClientsSay #customersOpinionsList .customerOpinion .message {
+#WhatClientsSay div .customerOpinion .message {
+    text-align: center;
     margin-top: 20px;
     font-size: 12.8015px;
     line-height: 240.6%;
@@ -1064,6 +1084,42 @@ header #contactUs:hover {
 
 .redesignPack .CustomerName, .redesignPack .selectedPack, .redesignPack .checked {
     color: var(--color-6);
+}
+
+@media (max-width: 940px) {
+    #WhatClientsSay {
+        margin-top: 50px;
+    }
+    #WhatClientsSay h2 {
+        margin-bottom: 70px;
+    }
+    #WhatClientsSay div .customerOpinion {
+        width: 200px;
+        height: 200px;
+        padding: 5px;
+        margin: 0 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-top: 25px;
+        border-radius: 32.0038px;
+    }
+    #WhatClientsSay div .customerOpinion img {
+        height: 50px;
+        top: -29px;
+    }
+    #WhatClientsSay div .customerOpinion .CustomerName {
+        font-size: 11.0434px;
+    }
+    #WhatClientsSay div .customerOpinion .selectedPack {
+        font-size: 8.28252px;
+    }
+    #WhatClientsSay div .customerOpinion .rating span {
+        font-size: 10px;
+    }
+    #WhatClientsSay div .customerOpinion .message {
+        margin-top: 20px;
+        font-size: 7.36224px;
+    }
 }
 
 /************* Footer *************/
