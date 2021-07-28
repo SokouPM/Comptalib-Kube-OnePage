@@ -1,16 +1,18 @@
 @font-face {
-	font-family: "Avenir Next LT Pro";
-	src: url('/sources/fonts/26301410506.ttf');
+    font-family: "Avenir Next LT Pro";
+    src: url('/sources/fonts/26301410506.ttf');
 }
+
 @font-face {
-	font-family: "Avenir Next LT Pro";
-	font-style: italic;
-	src: url('/sources/fonts/25728576873.ttf');
+    font-family: "Avenir Next LT Pro";
+    font-style: italic;
+    src: url('/sources/fonts/25728576873.ttf');
 }
+
 @font-face {
-	font-family: "Avenir Next LT Pro";
-	font-weight: bold;
-	src: url('/sources/fonts/25381880192.ttf');
+    font-family: "Avenir Next LT Pro";
+    font-weight: bold;
+    src: url('/sources/fonts/25381880192.ttf');
 }
 
 * {
@@ -54,30 +56,35 @@ h1, h2 {
     border: none;
 }
 
+@media (max-width: 940px) {
+    h1, h2 {
+        font-size: 21.2789px;
+        margin-bottom: 25px;
+    }
+    section {
+        margin-bottom: 1px;
+    }
+}
+
 /************* Header *************/
 
 header {
-    background: url("/sources/forms/Forme7.png") no-repeat;
-    height: 152px;
+    background: url("/sources/forms/Forme7.png") no-repeat top left;
+    min-height: 152px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 80px;
+    padding: 0 3% 0 50px;
 }
 
 header #specialWebOffer {
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 36px;
     line-height: 29px;
-    margin-left: 150px;
     padding-bottom: 50px;
     color: #FFFFFF;
-}
-
-header img {
-    height: 37.44px;
 }
 
 header #twoLogos {
@@ -85,12 +92,17 @@ header #twoLogos {
     align-items: center;
 }
 
-header #plus {
-    padding: 6px;
+header #twoLogos img {
+    height: 37.44px;
+}
+
+header #twoLogos #plus {
+    padding: 2%;
     margin: 0 15px;
     background: #FFFFFF;
     box-shadow: 1.8718px 1.8718px 6.86325px rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
+    border-radius: 30%;
+    font-size: 100%;
     color: var(--color-1);
 }
 
@@ -108,7 +120,6 @@ header #contactNumber {
     background: #FFFFFF;
     border: 3.20038px solid var(--color-1);
     color: var(--color-1);
-    border-radius: 16.0019px;
 }
 
 header #contactNumber:hover {
@@ -128,6 +139,70 @@ header #contactUs:hover {
     border: 3.20038px solid var(--color-3);
 }
 
+@media (max-width: 1300px) {
+    header {
+        padding: 0 1%;
+        background-position: left -55px top;
+    }
+    header button {
+        width: 154.96px;
+        height: 43.08px;
+        border-radius: 13px;
+    }
+}
+
+@media (max-width: 1170px) {
+    header {
+        background-position: left -195px top;
+    }
+    header #specialWebOffer {
+        font-size: 21.9873px;
+    }
+    header button {
+        width: 124.96px;
+        height: 33.08px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 940px) {
+    header {
+        min-height: 55px;
+        background: url("/sources/forms/mobile/Forme7.png") no-repeat top left;
+        margin-bottom: 80px;
+    }
+    header #specialWebOffer {
+        font-size: 11.9873px;
+        line-height: 25px;
+        padding-bottom: 0;
+    }
+    header #twoLogos {
+        position: absolute;
+        width: max-content;
+        top: 90px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    header #twoLogos img {
+        height: 21.19px;
+    }
+    header #twoLogos #plus {
+        margin: 0 15px;
+        background: #FFFFFF;
+        box-shadow: 1.07648px 1.07648px 3.9471px rgba(0, 0, 0, 0.3);
+        font-size: 10px;
+        color: var(--color-1);
+    }
+    header button {
+        width: 89.12px;
+        height: 24.78px;
+        padding: 0;
+        font-size: 7.9925px;
+        border-radius: 7.9925px;
+    }
+}
+
 /************* Section Title *************/
 
 #title {
@@ -137,7 +212,12 @@ header #contactUs:hover {
 #title p {
     color: var(--color-2);
     font-size: 20.0024px;
-    line-height: 24px;
+}
+
+@media (max-width: 940px) {
+    #title p {
+        font-size: 11.5035px;
+    }
 }
 
 /************* Section Contact form *************/
@@ -145,16 +225,15 @@ header #contactUs:hover {
 #contactForm {
     background: url("/sources/forms/Forme1.png") no-repeat;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    padding: 0 300px;
+    justify-content: center;
 }
 
 #contactForm #specialDiscount {
     text-align: center;
     width: 400px;
     color: var(--color-1);
+    margin-right: 100px;
 }
 
 #contactForm #specialDiscount h2 {
@@ -179,7 +258,6 @@ header #contactUs:hover {
     background: #FFFFFF;
     border: 3.20038px solid var(--color-1);
     color: var(--color-1);
-    border-radius: 16.0019px;
 }
 
 #contactForm #specialDiscount button:hover {
@@ -193,6 +271,7 @@ header #contactUs:hover {
     background: #FFFFFF;
     box-shadow: 2.5443px 2.5443px 12.4335px rgba(0, 0, 0, 0.4);
     border-radius: 32.0038px;
+    margin-left: 100px;
 }
 
 #contactForm #form h2 {
@@ -228,7 +307,7 @@ header #contactUs:hover {
 
 #contactForm #form form input:not(#submit), #contactForm #form form textarea {
     background: rgba(249, 249, 251, 0.2);
-    border: 2.40029px solid #1757FF;
+    border: 2.40029px solid var(--color-1);
     border-radius: 14.4017px;
     padding: 10px;
     font-size: 16.0019px;
@@ -255,13 +334,89 @@ header #contactUs:hover {
     border: 3.20038px solid var(--color-1);
 }
 
+@media (max-width: 1024px) {
+    #contactForm #specialDiscount {
+        margin-right: 25px;
+    }
+    #contactForm #form {
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 940px) {
+    #title p {
+        font-size: 11.5035px;
+    }
+    #contactForm {
+        background: url("/sources/forms/mobile/Forme1.png") no-repeat;
+        flex-direction: column;
+    }
+    #contactForm #specialDiscount {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    #contactForm #specialDiscount img {
+        width: 222.25px;
+    }
+    #contactForm #specialDiscount h2 {
+        font-size: 18.4056px;
+        line-height: 22px;
+        margin: 0;
+    }
+    #contactForm #specialDiscount p {
+        font-size: 11.5021px;
+        line-height: 132.79%;
+        margin: 10px 0;
+    }
+    #contactForm #specialDiscount button {
+        width: 141.26px;
+        height: 33.59px;
+        font-size: 11.5035px;
+        border-radius: 9.2028px;
+    }
+    #contactForm #form {
+        margin-left: 0;
+        width: 311.61px;
+        box-shadow: 2.5443px 2.5443px 12.4335px rgba(0, 0, 0, 0.4);
+        border-radius: 22.0951px;
+    }
+    #contactForm #form h2 {
+        border-radius: 22.0951px 22.0951px 0px 0px;
+        font-size: 16.5713px;
+        padding: 15px 0;
+        margin-bottom: 10px;
+    }
+    #contactForm #form form {
+        padding: 0 20px;
+        padding-bottom: 20px;
+    }
+    #contactForm #form form p {
+        font-size: 16.0019px;
+        margin: 5px 0;
+    }
+    #contactForm #form form #inputRadio {
+        margin-bottom: 5px;
+        font-size: 11.5021px;
+    }
+    #contactForm #form form input:not(#submit), #contactForm #form form textarea {
+        border-radius: 9.9428px;
+        padding: 5px;
+        font-size: 11.5021px;
+    }
+    #contactForm #form form #submit {
+        width: 114.43px;
+        height: 32.36px;
+        font-size: 13.8094px;
+        border-radius: 11.0476px;
+    }
+}
+
 /************* Section Our 3 packs *************/
 
 #Our3packs {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 0 200px;
     margin-top: 150px;
 }
 
@@ -272,17 +427,16 @@ header #contactUs:hover {
 
 #Our3packs #packs {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
-#Our3packs #packs div .pack h2 {
-    font-weight: bold;
-    font-size: 24.0029px;
-    color: #FFFFFF;
-    border-radius: 32.0038px 32.0038px 0px 0px;
-    padding: 15px 80px;
-    margin-bottom: 0;
+#Our3packs #packs .packInfo {
+    margin: 0 20px;
+}
+
+#Our3packs #packs .packInfo ul {
+    padding-left: 1rem;
 }
 
 #Our3packs #packs div .pack h2 {
@@ -382,6 +536,17 @@ header #contactUs:hover {
     border: 3.20038px solid var(--color-1);
 }
 
+@media (max-width: 940px) {
+    #Our3packs {
+        margin-top: 70px;
+    }
+    #Our3packs p {
+        font-size: 11.5035px;
+        margin-bottom: 10px;
+    }
+    /* TODO */
+}
+
 /************* Section Kube, what is it ? *************/
 
 #KubeWhatIsIt {
@@ -427,12 +592,92 @@ header #contactUs:hover {
     text-decoration: underline;
 }
 
+@media (max-width: 1200px) {
+    #KubeWhatIsIt {
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 1016px) {
+    #KubeWhatIsIt {
+        padding-right: 2%;
+    }
+}
+
+@media (max-width: 962px) {
+    #KubeWhatIsIt {
+        background: url("/sources/forms/mobile/Forme5.png") no-repeat top left, url("/sources/forms/Forme2.png") no-repeat bottom right;
+    }
+    #KubeWhatIsIt img {
+        height: 290px;
+    }
+    #KubeWhatIsIt #description a {
+        width: 100%;
+        justify-self: center;
+    }
+    #KubeWhatIsIt #description h2 {
+        font-size: 22.0867px;
+        line-height: 27px;
+    }
+    #KubeWhatIsIt #description p, #KubeWhatIsIt #description a {
+        font-size: 11.5021px;
+        line-height: 14px;
+    }
+    #KubeWhatIsIt #description a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 568px) {
+    #KubeWhatIsIt {
+        padding-right: 0;
+        min-height: 591px;
+        margin-top: 50px;
+        padding-top: 90px;
+        padding-bottom: 200px;
+        flex-direction: column;
+        background: url("/sources/forms/mobile/Forme5.png") no-repeat top left, url("/sources/forms/Forme2.png") no-repeat bottom right -350px;
+    }
+    #KubeWhatIsIt img {
+        height: 290px;
+        margin-bottom: 20px;
+    }
+    #KubeWhatIsIt #description {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    #KubeWhatIsIt #description * {
+        text-align: center;
+    }
+    #KubeWhatIsIt #description a {
+        text-align: center;
+        width: 100%;
+        justify-self: center;
+    }
+    #KubeWhatIsIt #description h2 {
+        width: max-content;
+        margin: 10px auto;
+        font-size: 22.0867px;
+        line-height: 27px;
+    }
+    #KubeWhatIsIt #description p, #KubeWhatIsIt #description a {
+        font-size: 11.5021px;
+        line-height: 14px;
+    }
+    #KubeWhatIsIt #description a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
 /************* Section Our production *************/
 
 #Ourproductions h2 {
     font-weight: bold;
     color: var(--color-1);
-    font-size: 48.0057px;
+    ;
 }
 
 #Ourproductions, #Ourproductions a:visited {
@@ -462,7 +707,7 @@ header #contactUs:hover {
     padding-left: 20.5%;
 }
 
-.carousel-item-end div:first-child .card:first-child,  .carousel-item-start div:last-child .card:last-child {
+.carousel-item-end div:first-child .card:first-child, .carousel-item-start div:last-child .card:last-child {
     animation: fadeIn 1s;
 }
 
@@ -492,14 +737,59 @@ header #contactUs:hover {
     height: 50px;
 }
 
+@media (max-width: 767px) {
+    .carousel-inner {
+        padding-left: 28%;
+    }
+    .carousel-item-end div:last-child .card {
+        width: max-content;
+        margin: auto;
+    }
+    .carousel-item-end div:last-child .card:last-child, .carousel-item-start div:first-child .card:first-child {
+        animation: none;
+    }
+    .carousel-item-end div:first-child .card:first-child, .carousel-item-start div:last-child .card:last-child {
+        animation: none;
+    }
+}
+
+@media (max-width: 667px) {
+    .carousel-inner {
+        padding-left: 25%;
+    }
+}
+
+@media (max-width: 564px) {
+    .carousel-inner {
+        padding-left: 21%;
+    }
+}
+
+@media (max-width: 414px) {
+    .carousel-inner {
+        padding-left: 10%;
+    }
+}
+
+@media (max-width: 375px) {
+    .carousel-inner {
+        padding-left: 5%;
+    }
+}
+
+@media (max-width: 360px) {
+    .carousel-inner {
+        padding-left: 3%;
+    }
+}
+
 /************* Section Our engagements *************/
 
 #Ourengagements {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background: url(/sources/forms/Forme4.png) bottom left no-repeat;
-    padding: 0 250px;
     margin-bottom: 0;
 }
 
@@ -508,6 +798,11 @@ header #contactUs:hover {
     background: #FFFFFF;
     box-shadow: 2.40029px 2.40029px 12.8015px rgba(0, 0, 0, 0.4);
     border-radius: 32.0038px;
+}
+
+#Ourengagements #text {
+    margin-right: 25px;
+    width: 436.05px;
 }
 
 #Ourengagements #text div {
@@ -520,9 +815,11 @@ header #contactUs:hover {
 #Ourengagements #icons {
     display: flex;
     justify-content: center;
-    min-width: 668px;
-    background: url(/sources/forms/Forme3.png) bottom no-repeat;
+    width: 668px;
+    height: 562px;
+    background: url(/sources/forms/Forme3.png) center no-repeat;
     margin-bottom: 125px;
+    margin-left: 25px;
 }
 
 #Ourengagements #icons div div {
@@ -538,7 +835,7 @@ header #contactUs:hover {
     padding-top: 15px;
 }
 
-#Ourengagements #icons div div img{
+#Ourengagements #icons div div img {
     width: 90px;
 }
 
@@ -559,14 +856,81 @@ header #contactUs:hover {
 }
 
 #Ourengagements #icons #column2 {
-    margin-top: 90px;
-    margin-right: 50px;
+    margin-top: 80px;
+}
+
+@media (max-width: 1173px) {
+    #Ourengagements {
+        padding: 0 10px;
+    }
+    #Ourengagements #text div, #Ourengagements #icons div div {
+        border-radius: 18.4056px;
+    }
+    #Ourengagements #text {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Ourengagements #text div {
+        font-size: 9.2028px;
+        padding: 20px;
+        line-height: 240.6%;
+        width: 315.16px;
+        margin-right: 0;
+    }
+    #Ourengagements #icons {
+        padding: 0;
+        width: 455px;
+        height: 362px;
+        margin-left: 10px;
+        background: url(/sources/forms/mobile/Forme3.png) center no-repeat;
+    }
+    #Ourengagements #icons div div {
+        width: 121.02px;
+        height: 121.02px;
+        font-weight: bold;
+        font-size: 18.4056px;
+        margin: 30px 15px;
+        padding-top: 15px;
+    }
+    #Ourengagements #icons div div img {
+        width: 36.81px;
+    }
+}
+
+@media (max-width: 940px) {
+    #Ourengagements {
+        position: relative;
+        flex-direction: column-reverse;
+        background: none;
+        margin-bottom: 50px;
+        background: url(/sources/forms/mobile/Forme3.png) center no-repeat;
+    }
+    #Ourengagements #text {
+        margin-right: 0;
+        align-items: center;
+    }
+    #Ourengagements #text h2 {
+        position: absolute;
+        top: 20px;
+    }
+    #Ourengagements #text div {
+        width: 315.16px;
+    }
+    #Ourengagements #icons {
+        margin-bottom: 50px;
+        background: none;
+    }
+    #Ourengagements #icons #column1, #Ourengagements #icons #column2 {
+        margin-top: 70px;
+    }
 }
 
 /************* Section Our key figures *************/
 
 #Ourkeyfigures {
-    padding: 0 250px;
+    padding: 0 15%;
 }
 
 #Ourkeyfigures div {
@@ -579,6 +943,7 @@ header #contactUs:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 311px;
 }
 
 #Ourkeyfigures div div img {
@@ -594,6 +959,27 @@ header #contactUs:hover {
     color: var(--color-2);
 }
 
+@media (max-width: 1385px) {
+    #Ourkeyfigures {
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 940px) {
+    #Ourkeyfigures div {
+        flex-direction: column;
+        align-items: center;
+    }
+    #Ourkeyfigures div div img {
+        height: 92.49px;
+    }
+    #Ourkeyfigures div div p {
+        margin-top: 20px;
+        font-size: 18.4056px;
+        line-height: 22px;
+    }
+}
+
 /************* Section What client say *************/
 
 #WhatClientsSay {
@@ -605,21 +991,23 @@ header #contactUs:hover {
 
 #WhatClientsSay #customersOpinionsList {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     text-align: center;
 }
 
 #WhatClientsSay #customersOpinionsList .customerOpinion {
+    min-width: 303.24px;
     width: 303.24px;
     height: 303.24px;
+    margin: 0 30px;
     padding: 15px;
     padding-top: 70px;
     background: #FFFFFF;
     box-shadow: 2.40029px 2.40029px 12.8015px rgba(0, 0, 0, 0.4);
     border-radius: 32.0038px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
@@ -749,4 +1137,45 @@ footer #Kubecontact .info .websiteLink, footer #Kubecontact .contact i, footer #
 
 footer #Comptalibcontact .info .websiteLink, footer #Comptalibcontact i:not(.socialMediaIcons i), footer #Comptalibcontact .info .websiteLink:visited {
     color: var(--color-1);
+}
+
+@media (max-width: 1133px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+    footer #Kubecontact, footer #Comptalibcontact {
+        width: 600px;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 650px) {
+    footer #Kubecontact, footer #Comptalibcontact {
+        border-radius: 20.2652px;
+        padding: 20px;
+        width: 328.8px;
+    }
+    footer div div div img {
+        height: 12.67px;
+    }
+    footer div .info a:not(.socialMediaIcons a) {
+        font-size: 10.1326px;
+        margin-bottom: 5px;
+    }
+    footer div .info .socialMediaIcons a {
+        font-size: 13px;
+    }
+    footer div .line {
+        width: 1px;
+        height: 80px;
+        margin: 0 10px;
+    }
+    footer #Kubecontact .contact p, footer #Comptalibcontact p {
+        font-size: 10.1326px;
+    }
+    footer #Kubecontact .contact p:nth-child(1) {
+        margin-bottom: 10px;
+    }
 }
