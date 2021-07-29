@@ -58,7 +58,7 @@ h1, h2 {
 
 @media (max-width: 940px) {
     h1, h2 {
-        font-size: 21.2789px;
+        font-size: 25px;
         margin-bottom: 25px;
     }
     section {
@@ -175,6 +175,7 @@ header #contactUs:hover {
         font-size: 11.9873px;
         line-height: 25px;
         padding-bottom: 0;
+        margin-left: 5px;
     }
     header #twoLogos {
         position: absolute;
@@ -201,6 +202,12 @@ header #contactUs:hover {
         font-size: 7.9925px;
         border-radius: 7.9925px;
     }
+    header #contactNumber {
+        border-width: 1.5985px;
+    }
+    header #contactUs:hover {
+        border-width: 1.5985px;
+    }
 }
 
 /************* Section Title *************/
@@ -215,8 +222,13 @@ header #contactUs:hover {
 }
 
 @media (max-width: 940px) {
+    #title h1, #title p {
+        width: 80%;
+        margin: auto;
+    }
     #title p {
-        font-size: 11.5035px;
+        font-size: 14px;
+        margin-top: 10px;
     }
 }
 
@@ -279,6 +291,7 @@ header #contactUs:hover {
     background: var(--gradient-2);
     font-weight: bold;
     font-size: 24.0029px;
+    margin-bottom: 10px;
     text-align: center;
     padding: 20px 0;
     color: #FFFFFF;
@@ -344,9 +357,6 @@ header #contactUs:hover {
 }
 
 @media (max-width: 940px) {
-    #title p {
-        font-size: 11.5035px;
-    }
     #contactForm {
         background: url("/sources/forms/mobile/Forme1.png") no-repeat;
         flex-direction: column;
@@ -365,8 +375,7 @@ header #contactUs:hover {
         margin: 0;
     }
     #contactForm #specialDiscount p {
-        font-size: 11.5021px;
-        line-height: 132.79%;
+        font-size: 14px;
         margin: 10px 0;
     }
     #contactForm #specialDiscount button {
@@ -374,6 +383,7 @@ header #contactUs:hover {
         height: 33.59px;
         font-size: 11.5035px;
         border-radius: 9.2028px;
+        border-width: 1.5985px;
     }
     #contactForm #form {
         margin-left: 0;
@@ -409,6 +419,9 @@ header #contactUs:hover {
         height: 32.36px;
         font-size: 13.8094px;
         border-radius: 11.0476px;
+    }
+    #contactForm #form form #submit:hover {
+        border-width: 1.5985px;
     }
 }
 
@@ -457,6 +470,7 @@ header #contactUs:hover {
 
 #Our3packs div div .pack ul {
     margin-top: 15px;
+    list-style: inside;
 }
 
 #Our3packs div div .pack ul li {
@@ -544,6 +558,18 @@ header #contactUs:hover {
 }
 
 @media (max-width: 1175px) {
+    #Our3packs {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 90px;
+    }
+    #Our3packs p {
+        font-size: 14px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
     #Our3packs #packDeskOnly * {
         display: none;
     }
@@ -555,8 +581,11 @@ header #contactUs:hover {
         width: 250px;
         margin-bottom: 20px;
     }
+    #Our3packs #packMobileOnly div .pack .packContent ul, #Our3packs #packMobileOnly #ecommercePack .pack .packContent ul {
+        padding: 0;
+    }
     #Our3packs #packMobileOnly div .pack .packContent, #Our3packs #packMobileOnly #ecommercePack .pack .packContent {
-        padding: 0 10px;
+        padding: 0 5px;
     }
     #Our3packs #packMobileOnly div .pack h2, #Our3packs #packMobileOnly #ecommercePack .pack h2 {
         font-size: 17.2246px;
@@ -577,6 +606,7 @@ header #contactUs:hover {
     align-items: center;
     justify-content: space-around;
     padding: 150px 0;
+    margin-bottom: 0;
     background: url("/sources/forms/Forme5.png") no-repeat, url("/sources/forms/Forme2.png") no-repeat right;
 }
 
@@ -657,7 +687,8 @@ header #contactUs:hover {
         min-height: 591px;
         margin-top: 50px;
         padding-top: 90px;
-        padding-bottom: 200px;
+        margin-bottom: -50px;
+        padding-bottom: 0;
         flex-direction: column;
         background: url("/sources/forms/mobile/Forme5.png") no-repeat top left, url("/sources/forms/Forme2.png") no-repeat bottom right -350px;
     }
@@ -669,6 +700,7 @@ header #contactUs:hover {
         width: 90%;
         display: flex;
         flex-direction: column;
+        margin-bottom: 150px;
     }
     #KubeWhatIsIt #description * {
         text-align: center;
@@ -698,8 +730,8 @@ header #contactUs:hover {
 
 #Ourproductions h2 {
     font-weight: bold;
+    margin-bottom: 80px;
     color: var(--color-1);
-    ;
 }
 
 #Ourproductions, #Ourproductions a:visited {
@@ -760,8 +792,20 @@ header #contactUs:hover {
 }
 
 @media (max-width: 767px) {
+    #Ourproductions h2 {
+        margin-bottom: 40px;
+    }
+    #Ourproductions p {
+        font-size: 20px;
+    }
+    #Ourproductions a {
+        font-size: 16px;
+    }
     .carousel-inner {
-        padding-left: 28%;
+        padding: 0;
+    }
+    .carousel-item div {
+        margin: auto;
     }
     .carousel-item-end div:last-child .card {
         width: max-content;
@@ -773,35 +817,13 @@ header #contactUs:hover {
     .carousel-item-end div:first-child .card:first-child, .carousel-item-start div:last-child .card:last-child {
         animation: none;
     }
-}
-
-@media (max-width: 667px) {
-    .carousel-inner {
-        padding-left: 25%;
-    }
-}
-
-@media (max-width: 564px) {
-    .carousel-inner {
-        padding-left: 21%;
-    }
-}
-
-@media (max-width: 414px) {
-    .carousel-inner {
-        padding-left: 10%;
-    }
-}
-
-@media (max-width: 375px) {
-    .carousel-inner {
-        padding-left: 5%;
-    }
-}
-
-@media (max-width: 360px) {
-    .carousel-inner {
-        padding-left: 3%;
+    @keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
     }
 }
 
@@ -923,6 +945,7 @@ header #contactUs:hover {
 
 @media (max-width: 940px) {
     #Ourengagements {
+        margin-top: -70px;
         position: relative;
         flex-direction: column-reverse;
         background: none;
@@ -955,6 +978,7 @@ header #contactUs:hover {
 
 #Ourkeyfigures {
     padding: 0 15%;
+    margin-top: 70px;
 }
 
 #Ourkeyfigures div {
@@ -977,7 +1001,7 @@ header #contactUs:hover {
 #Ourkeyfigures div div p {
     margin-top: 40px;
     font-weight: bold;
-    font-size: 32.0038px;
+    font-size: 28.0038px;
     line-height: 39px;
     text-align: center;
     color: var(--color-2);
@@ -1010,6 +1034,7 @@ header #contactUs:hover {
     background: url(/sources/forms/Forme6.png) no-repeat;
     margin-bottom: 0;
     margin-top: 200px;
+    position: relative;
 }
 
 #WhatClientsSay h2 {
@@ -1037,6 +1062,7 @@ header #contactUs:hover {
 #WhatClientsSay div .customerOpinion img {
     filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.25));
     height: 95px;
+    width: 95px;
     position: absolute;
     top: -50px;
 }
@@ -1091,20 +1117,23 @@ header #contactUs:hover {
         margin-top: 50px;
     }
     #WhatClientsSay h2 {
-        margin-bottom: 70px;
+        margin-bottom: 30px;
+    }
+    #WhatClientsSay #customerSlide {
+        padding-top: 20px;
     }
     #WhatClientsSay div .customerOpinion {
         width: 200px;
         height: 200px;
-        padding: 5px;
+        padding: 20px;
         margin: 0 30px;
         margin-top: 30px;
         margin-bottom: 30px;
-        padding-top: 25px;
         border-radius: 32.0038px;
     }
     #WhatClientsSay div .customerOpinion img {
         height: 50px;
+        width: 50px;
         top: -29px;
     }
     #WhatClientsSay div .customerOpinion .CustomerName {

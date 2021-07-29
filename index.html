@@ -8,9 +8,10 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
     <link rel="stylesheet" href="/libraries/bootstrap5-carousel-multi-main/style.css" />
-
     <link rel="stylesheet" href="/libraries/simpleSlide/style.css">
+    
     <link href="style.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -145,28 +146,6 @@
             <div id="packMobileOnly" class="slide">
                 <div class="slide-items">
                     <div class="slide-item">
-                        <div id="redesignPack" class="packInfo card">
-                            <img src="/sources/images/Packrefonte.png" alt="Pack refonte">
-                            <div class="pack">
-                                <h2 class="card-title">PACK REFONTE</h2>
-                                <div class="packContent card-content">
-                                    <ul>
-                                        <li>Refonte de votre site</li>
-                                        <li>Design sur-mesure</li>
-                                        <li>Responsive design</li>
-                                        <li>Responsive design & Optimisation UX</li>
-                                        <li>Formulaire de contact</li>
-                                        <li>Synchronisation réseaux sociaux</li>
-                                        <li>Livré sous 14 jours</li>
-                                    </ul>
-                                    <button
-                                        onclick="window.location.href='https\:\/\/kubewebagence.com/collections/pack-creation-site-internet/products/site-one-page'">900€
-                                        HT</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide-item">
                         <div id="ecommercePack" class="packInfo card">
                             <img src="/sources/images/PackE-commerce.png" alt="Pack e-commerce">
                             <div class="pack">
@@ -184,6 +163,28 @@
                                     <button
                                         onclick="window.location.href='https\:\/\/kubewebagence.com/collections/pack-creation-site-internet/products/site-e-commerce'">3
                                         450€ HT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div id="redesignPack" class="packInfo card">
+                            <img src="/sources/images/Packrefonte.png" alt="Pack refonte">
+                            <div class="pack">
+                                <h2 class="card-title">PACK REFONTE</h2>
+                                <div class="packContent card-content">
+                                    <ul>
+                                        <li>Refonte de votre site</li>
+                                        <li>Design sur-mesure</li>
+                                        <li>Responsive design</li>
+                                        <li>Responsive design & Optimisation UX</li>
+                                        <li>Formulaire de contact</li>
+                                        <li>Synchronisation réseaux sociaux</li>
+                                        <li>Livré sous 14 jours</li>
+                                    </ul>
+                                    <button
+                                        onclick="window.location.href='https\:\/\/kubewebagence.com/collections/pack-creation-site-internet/products/site-one-page'">900€
+                                        HT</button>
                                 </div>
                             </div>
                         </div>
@@ -318,7 +319,7 @@
 
         <section id="WhatClientsSay">
             <h2><span class="darkerWordTitle">Ce que nos clients</span><br> disent de nous</h2>
-            <div class="slide-items">
+            <div class="slide-items" id="customersSlide">
                 <div class="slide-item">
                     <div class="customerOpinion showcasePack">
                         <img src="/sources/customers/Michel.png" alt="">
@@ -405,7 +406,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+
+            <img src="/sources/icons/back.png" class="slide-button" id="previousButton" alt="previous" >
+            <img src="/sources/icons/next.png" class="slide-button" id="nextButton" alt="next" >
+    
+        </section>      
     </main>
 
     <footer>
@@ -444,11 +449,13 @@
         </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="/libraries/bootstrap5-carousel-multi-main/assets/js/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/9611474495.js" crossorigin="anonymous"></script>
+    <script src="/libraries/simpleSlide/script.js"></script>
 </body>
 
 </html>
