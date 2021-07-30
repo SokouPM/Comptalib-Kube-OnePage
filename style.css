@@ -1133,7 +1133,6 @@ header #contactUs:hover {
     #WhatClientsSay .customerDeskOnly {
         display: none;
     }
-
     #WhatClientsSay {
         margin-top: 50px;
     }
@@ -1261,18 +1260,19 @@ footer #Comptalibcontact .info .websiteLink, footer #Comptalibcontact i:not(.soc
 @media (max-width: 650px) {
     footer #Kubecontact, footer #Comptalibcontact {
         border-radius: 20.2652px;
+        display: flex;
+        justify-content: center;
         padding: 20px;
-        width: 328.8px;
+        width: 80%;
+    }
+    footer div .info * {
+        margin-bottom: 0 !important;
     }
     footer div div div img {
-        height: 12.67px;
+        height: 20px;
     }
-    footer div .info a:not(.socialMediaIcons a) {
-        font-size: 10.1326px;
-        margin-bottom: 5px;
-    }
-    footer div .info .socialMediaIcons a {
-        font-size: 13px;
+    footer div .info a {
+        font-size: 11px !important;
     }
     footer div .line {
         width: 1px;
@@ -1285,24 +1285,24 @@ footer #Comptalibcontact .info .websiteLink, footer #Comptalibcontact i:not(.soc
     footer #Kubecontact .contact p:nth-child(1) {
         margin-bottom: 10px;
     }
-    @media (max-width: 340px) {
-        footer #Kubecontact, footer #Comptalibcontact {
-            width: 90%;
-            font-size: 1px;
-            padding: 10px !important;
-            display: flex;
-            justify-content: center;
-        }
-        footer div .line {
-            width: 1px;
-            height: 60px;
-            margin: 0 10px;
-        }
-        footer img {
-            height: 13px !important;
-        }
-        footer p, footer a {
-            font-size: 8px !important;
-        }
+}
+
+@media (max-width: 386px) {
+    footer #Kubecontact, footer #Comptalibcontact {
+        width: 90%;
+    }
+    footer div .line {
+        width: 1px;
+        height: 60px;
+        margin: 0 10px;
+    }
+    footer img {
+        height: 13px !important;
+    }
+    footer p, footer a {
+        font-size: 8px !important;
+    }
+    footer p, footer .socialMediaIcons a {
+        font-size: 10px !important;
     }
 }
