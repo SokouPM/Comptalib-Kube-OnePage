@@ -45,6 +45,7 @@ function runMobileScreen() {
         for (let i = 1; i < opinions.length; i++) {
             opinions[i].classList.add("none");
         }
+        opinions[0].classList.remove("none");
     } else {
         for (let i = 1; i < opinions.length; i++) {
             opinions[i].classList.remove("none");
