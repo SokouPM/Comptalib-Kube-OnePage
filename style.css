@@ -1123,16 +1123,7 @@ header #contactUs:hover {
     }
 }
 
-@media (min-width: 941px) {
-    #WhatClientsSay .customerMobileOnly {
-        display: none;
-    }
-}
-
 @media (max-width: 940px) {
-    #WhatClientsSay .customerDeskOnly {
-        display: none;
-    }
     #WhatClientsSay {
         margin-top: 50px;
     }
