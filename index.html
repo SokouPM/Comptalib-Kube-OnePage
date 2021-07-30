@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comptalib X Kube OnePage</title>
 
+    <!-- External libraries -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        
+
+    <!-- Internal libraries -->
     <link rel="stylesheet" href="/libraries/bootstrap5-carousel-multi-main/style.css" />
     <link rel="stylesheet" href="/libraries/simpleSlide/style.css">
-    
+
+    <!-- CSS -->
     <link href="style.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -319,7 +322,96 @@
 
         <section id="WhatClientsSay">
             <h2><span class="darkerWordTitle">Ce que nos clients</span><br> disent de nous</h2>
-            <div class="slide-items" id="customersSlide">
+            <!-- for the desktop version -->
+            <div class="customerDeskOnly slide-items" id="customersSlide">
+                <div class="slide-item">
+                    <div class="customerOpinion showcasePack">
+                        <img src="/sources/customers/Michel.png" alt="">
+                        <p class="CustomerName">Michel</p>
+                        <p class="selectedPack"><span class="darkerWordTitle">Pack</span> vitrine</p>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <p class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto ab id
+                            natus
+                            numquam illo molestias corporis, dolore nulla nesciunt.</p>
+                    </div>
+                </div>
+                <div class="slide-item">
+                    <div class="customerOpinion ecommercePack">
+                        <img src="/sources/customers/Solene.png" alt="">
+                        <p class="CustomerName">Solène</p>
+                        <p class="selectedPack"><span class="darkerWordTitle">Pack</span> E-commerce</p>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <p class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto ab id
+                            natus
+                            numquam illo molestias corporis, dolore nulla nesciunt.</p>
+                    </div>
+                </div>
+                <div class="slide-item">
+                    <div class="customerOpinion redesignPack">
+                        <img src="/sources/customers/Quentin.png" alt="">
+                        <p class="CustomerName">Quentin</p>
+                        <p class="selectedPack"><span class="darkerWordTitle">Pack</span> refonte</p>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto ab id
+                            natus
+                            numquam illo molestias corporis, dolore nulla nesciunt.</p>
+                    </div>
+                </div>
+                <div class="slide-item">
+                    <div class="customerOpinion showcasePack">
+                        <img src="/sources/customers/Edgard.png" alt="">
+                        <p class="CustomerName">Romain</p>
+                        <p class="selectedPack"><span class="darkerWordTitle">Pack</span> vitrine</p>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <p class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto ab id
+                            natus
+                            numquam illo molestias corporis, dolore nulla nesciunt.</p>
+                    </div>
+                </div>
+                <div class="slide-item">
+                    <div class="customerOpinion ecommercePack">
+                        <img src="/sources/customers/Marine.png" alt="">
+                        <p class="CustomerName">Marine</p>
+                        <p class="selectedPack"><span class="darkerWordTitle">Pack</span> vitrine</p>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto ab id
+                            natus
+                            numquam illo molestias corporis, dolore nulla nesciunt.</p>
+                    </div>
+                </div>
+            </div>
+             <!-- for the mobile version -->
+             <div class="customerMobileOnly slide-items" id="customersSlide">
                 <div class="slide-item">
                     <div class="customerOpinion showcasePack">
                         <img src="/sources/customers/Michel.png" alt="">
@@ -407,10 +499,11 @@
                 </div>
             </div>
 
-            <img src="/sources/icons/back.png" class="slide-button" id="previousButton" alt="previous" >
-            <img src="/sources/icons/next.png" class="slide-button" id="nextButton" alt="next" >
-    
-        </section>      
+
+            <img src="/sources/icons/back.png" class="slide-button" id="previousButton" alt="previous">
+            <img src="/sources/icons/next.png" class="slide-button" id="nextButton" alt="next">
+
+        </section>
     </main>
 
     <footer>
@@ -449,13 +542,19 @@
         </div>
     </footer>
 
+    <!-- External libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="/libraries/bootstrap5-carousel-multi-main/assets/js/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/9611474495.js" crossorigin="anonymous"></script>
+
+    <!-- Internal libraries -->
     <script src="/libraries/simpleSlide/script.js"></script>
+
+    <!-- JS -->
+    <script src="/script.js"></script>
 </body>
 
 </html>

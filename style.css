@@ -601,6 +601,11 @@ header #contactUs:hover {
         font-size: 11.5021px;
         line-height: 240.6%;
     }
+    @media (max-width: 575px) {
+        #Our3packs #packMobileOnly .slide-item {
+            padding: 0 25px;
+        }
+    }
 }
 
 /************************************* Section Kube, what is it ? *************************************/
@@ -682,6 +687,12 @@ header #contactUs:hover {
     #KubeWhatIsIt #description a {
         text-decoration: none;
         font-weight: bold;
+    }
+}
+
+@media (max-width: 940px) {
+    #KubeWhatIsIt {
+        margin-top: 100px;
     }
 }
 
@@ -1041,9 +1052,7 @@ header #contactUs:hover {
     width: 303px;
     height: 303px;
     padding: 20px;
-    margin: 0 60px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin: 60px auto !important;
     padding-top: 55px;
     background: #FFFFFF;
     box-shadow: 2.40029px 2.40029px 12.8015px rgba(0, 0, 0, 0.4);
@@ -1108,23 +1117,39 @@ header #contactUs:hover {
     color: var(--color-6);
 }
 
+@media (max-width: 1279px) {
+    #WhatClientsSay .slide-item {
+        margin: 0 60px !important;
+    }
+}
+
+@media (min-width: 941px) {
+    #WhatClientsSay .customerMobileOnly {
+        display: none;
+    }
+}
+
 @media (max-width: 940px) {
+    #WhatClientsSay .customerDeskOnly {
+        display: none;
+    }
+
     #WhatClientsSay {
         margin-top: 50px;
     }
     #WhatClientsSay h2 {
         margin-bottom: 30px;
     }
-    #WhatClientsSay #customerSlide {
-        padding-top: 20px;
+    #WhatClientsSay .slide-item {
+        margin: 0 !important;
     }
-    #WhatClientsSay .slide-item {}
     #WhatClientsSay div .customerOpinion {
         width: 210px;
         height: 210px;
         margin: auto;
         padding: 40px;
-        margin-top: 30px;
+        padding-top: 50px;
+        margin-top: 40px;
         margin-bottom: 30px;
         border-radius: 32.0038px;
     }
@@ -1259,5 +1284,25 @@ footer #Comptalibcontact .info .websiteLink, footer #Comptalibcontact i:not(.soc
     }
     footer #Kubecontact .contact p:nth-child(1) {
         margin-bottom: 10px;
+    }
+    @media (max-width: 340px) {
+        footer #Kubecontact, footer #Comptalibcontact {
+            width: 90%;
+            font-size: 1px;
+            padding: 10px !important;
+            display: flex;
+            justify-content: center;
+        }
+        footer div .line {
+            width: 1px;
+            height: 60px;
+            margin: 0 10px;
+        }
+        footer img {
+            height: 13px !important;
+        }
+        footer p, footer a {
+            font-size: 8px !important;
+        }
     }
 }
