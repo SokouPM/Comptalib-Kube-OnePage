@@ -1057,7 +1057,7 @@ header #contactUs:hover {
     height: 303px;
     padding: 20px;
     margin: 60px auto !important;
-    padding-top: 55px;
+    padding-top: 55px !important;
     background: #FFFFFF;
     box-shadow: 2.40029px 2.40029px 12.8015px rgba(0, 0, 0, 0.4);
     border-radius: 32.0038px;
@@ -1142,7 +1142,7 @@ header #contactUs:hover {
         height: 210px;
         margin: auto;
         padding: 40px;
-        padding-top: 500000px !important;
+        padding-top: 50px;
         margin-top: 40px;
         margin-bottom: 30px;
         border-radius: 32.0038px;
