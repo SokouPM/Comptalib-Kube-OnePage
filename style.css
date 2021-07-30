@@ -66,7 +66,7 @@ h1, h2 {
     }
 }
 
-/************* Header *************/
+/************************************* Header *************************************/
 
 header {
     background: url("/sources/forms/Forme7.png") no-repeat top left;
@@ -210,7 +210,7 @@ header #contactUs:hover {
     }
 }
 
-/************* Section Title *************/
+/************************************* Section Title *************************************/
 
 #title {
     text-align: center;
@@ -232,7 +232,7 @@ header #contactUs:hover {
     }
 }
 
-/************* Section Contact form *************/
+/************************************* Section Contact form *************************************/
 
 #contactForm {
     background: url("/sources/forms/Forme1.png") no-repeat;
@@ -425,7 +425,7 @@ header #contactUs:hover {
     }
 }
 
-/************* Section Our 3 packs *************/
+/************************************* Section Our 3 packs *************************************/
 
 #Our3packs {
     display: flex;
@@ -599,7 +599,7 @@ header #contactUs:hover {
     }
 }
 
-/************* Section Kube, what is it ? *************/
+/************************************* Section Kube, what is it ? *************************************/
 
 #KubeWhatIsIt {
     display: flex;
@@ -726,7 +726,7 @@ header #contactUs:hover {
     }
 }
 
-/************* Section Our production *************/
+/************************************* Section Our production *************************************/
 
 #Ourproductions h2 {
     font-weight: bold;
@@ -742,6 +742,11 @@ header #contactUs:hover {
 
 #Ourproductions * {
     margin-bottom: 20px;
+}
+
+
+#Ourproductions img {
+    height: auto;
 }
 
 #Ourproductions p {
@@ -817,17 +822,9 @@ header #contactUs:hover {
     .carousel-item-end div:first-child .card:first-child, .carousel-item-start div:last-child .card:last-child {
         animation: none;
     }
-    @keyframes fadeOut {
-        0% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-        }
-    }
 }
 
-/************* Section Our engagements *************/
+/************************************* Section Our engagements *************************************/
 
 #Ourengagements {
     display: flex;
@@ -974,7 +971,7 @@ header #contactUs:hover {
     }
 }
 
-/************* Section Our key figures *************/
+/************************************* Section Our key figures *************************************/
 
 #Ourkeyfigures {
     padding: 0 15%;
@@ -1028,7 +1025,7 @@ header #contactUs:hover {
     }
 }
 
-/************* Section What client say *************/
+/************************************* Section What client say *************************************/
 
 #WhatClientsSay {
     background: url(/sources/forms/Forme6.png) no-repeat;
@@ -1151,7 +1148,7 @@ header #contactUs:hover {
     }
 }
 
-/************* Footer *************/
+/************************************* Footer *************************************/
 
 footer {
     background: #FFFFFF;
