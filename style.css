@@ -56,6 +56,10 @@ h1, h2 {
     border: none;
 }
 
+.none {
+    display: none;
+}
+
 @media (max-width: 940px) {
     h1, h2 {
         font-size: 25px;
