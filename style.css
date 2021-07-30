@@ -743,10 +743,8 @@ header #contactUs:hover {
 #Ourproductions * {
     margin-bottom: 20px;
 }
-
-
 #Ourproductions img {
-    height: auto;
+    height: 100%;
 }
 
 #Ourproductions p {
