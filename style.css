@@ -557,7 +557,7 @@ header #contactUs:hover {
     }
 }
 
-@media (max-width: 1175px) {
+@media (max-width: 1174px) {
     #Our3packs {
         display: flex;
         flex-direction: column;
@@ -576,6 +576,10 @@ header #contactUs:hover {
     #Our3packs #packMobileOnly img {
         width: 203.43px;
         height: 143.52px;
+    }
+    #Our3packs #packMobileOnly .packInfo {
+        width: max-content;
+        margin: auto;
     }
     #Our3packs #packMobileOnly div .pack, #Our3packs #packMobileOnly #ecommercePack .pack {
         width: 250px;
@@ -742,9 +746,6 @@ header #contactUs:hover {
 
 #Ourproductions * {
     margin-bottom: 20px;
-}
-#Ourproductions img {
-    height: 100%;
 }
 
 #Ourproductions p {
@@ -1117,11 +1118,12 @@ header #contactUs:hover {
     #WhatClientsSay #customerSlide {
         padding-top: 20px;
     }
+    #WhatClientsSay .slide-item {}
     #WhatClientsSay div .customerOpinion {
-        width: 200px;
-        height: 200px;
-        padding: 20px;
-        margin: 0 30px;
+        width: 210px;
+        height: 210px;
+        margin: auto;
+        padding: 40px;
         margin-top: 30px;
         margin-bottom: 30px;
         border-radius: 32.0038px;
