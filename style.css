@@ -802,6 +802,9 @@ header #contactUs:hover {
     #Ourproductions .productionSlide {
         width: 100%;
     }
+    .slick-prev, .slick-next, .slick-prev:before, .slick-next:before {
+        display: none;
+    }
 }
 
 /************************************* Section Our engagements *************************************/
