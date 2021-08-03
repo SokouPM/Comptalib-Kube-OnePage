@@ -323,6 +323,7 @@ header #contactUs:hover {
 }
 
 #contactForm #form form input:not(#submit), #contactForm #form form textarea {
+    font-family: "Avenir Next LT Pro";
     background: rgba(249, 249, 251, 0.2);
     border: 2.40029px solid var(--color-1);
     border-radius: 14.4017px;
