@@ -1017,6 +1017,10 @@ header #contactUs:hover {
 #WhatClientsSay h2 {
     margin-bottom: 50px;
 }
+#WhatClientsSay .customerSlide {
+    width: 90%;
+    margin: auto;
+}
 
 #WhatClientsSay div .customerOpinion {
     width: 250px;
