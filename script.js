@@ -7,7 +7,7 @@ let actualCustomer = 0;
 
 function previousCustomer() {
 
-    if (screen.width <= 940) {
+    if ($(document).width() <= 940) {
 
         actualCustomer--;
 
@@ -19,7 +19,7 @@ function previousCustomer() {
 
 function nextCustomer() {
 
-    if (screen.width <= 940) {
+    if ($(document).width() <= 940) {
 
         actualCustomer++
 
@@ -41,7 +41,7 @@ function customersTabChanges() {
 }
 
 function runMobileScreen() {
-    if (screen.width <= 940) {
+    if ($(document).width() <= 940) {
         for (let i = 1; i < opinions.length; i++) {
             opinions[i].classList.add("none");
         }

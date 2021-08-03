@@ -763,6 +763,10 @@ header #contactUs:hover {
     margin-bottom: 20px;
 }
 
+#Ourproductions img {
+    margin: auto;
+}
+
 #Ourproductions p {
     font-size: 24.0029px;
 }
@@ -776,38 +780,13 @@ header #contactUs:hover {
     text-decoration: underline;
 }
 
-.carousel-inner {
-    padding-left: 20.5%;
+#Ourproductions .productionSlide {
+    width: 80%;
+    margin: auto;
 }
 
-.carousel-item-end div:first-child .card:first-child, .carousel-item-start div:last-child .card:last-child {
-    animation: fadeIn 1s;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.carousel-item-end div:last-child .card:last-child, .carousel-item-start div:first-child .card:first-child {
-    animation: fadeOut 0.7s;
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-#Ourproductions a img {
-    height: 50px;
+.slick-prev, .slick-next, .slick-prev:before, .slick-next:before {
+    color: black;
 }
 
 @media (max-width: 767px) {
@@ -820,21 +799,8 @@ header #contactUs:hover {
     #Ourproductions a {
         font-size: 16px;
     }
-    .carousel-inner {
-        padding: 0;
-    }
-    .carousel-item div {
-        margin: auto;
-    }
-    .carousel-item-end div:last-child .card {
-        width: max-content;
-        margin: auto;
-    }
-    .carousel-item-end div:last-child .card:last-child, .carousel-item-start div:first-child .card:first-child {
-        animation: none;
-    }
-    .carousel-item-end div:first-child .card:first-child, .carousel-item-start div:last-child .card:last-child {
-        animation: none;
+    #Ourproductions .productionSlide {
+        width: 100%;
     }
 }
 
@@ -973,7 +939,7 @@ header #contactUs:hover {
         top: 20px;
     }
     #Ourengagements #text div {
-        width: 315.16px;
+        width: 80%;
     }
     #Ourengagements #icons {
         margin-bottom: 50px;
@@ -1053,16 +1019,16 @@ header #contactUs:hover {
 }
 
 #WhatClientsSay div .customerOpinion {
-    width: 303px;
-    height: 303px;
+    width: 250px;
+    height: 250px;
     padding: 20px;
-    margin: 60px auto !important;
-    padding-top: 55px !important;
+    padding-top: 50px;
+    margin: 60px auto;
     background: #FFFFFF;
     box-shadow: 2.40029px 2.40029px 12.8015px rgba(0, 0, 0, 0.4);
     border-radius: 32.0038px;
     display: flex;
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
     flex-direction: column;
     position: relative;
@@ -1138,14 +1104,14 @@ header #contactUs:hover {
         margin: 0 !important;
     }
     #WhatClientsSay div .customerOpinion {
-        width: 210px;
-        height: 210px;
+        width: 200px;
+        height: 200px;
         margin: auto;
-        padding: 40px;
-        padding-top: 50px;
         margin-top: 40px;
         margin-bottom: 30px;
-        border-radius: 32.0038px;
+        padding: 10px;
+        padding-top: 25px;
+        border-radius: 32.0038px
     }
     #WhatClientsSay div .customerOpinion img {
         height: 50px;
@@ -1153,17 +1119,17 @@ header #contactUs:hover {
         top: -29px;
     }
     #WhatClientsSay div .customerOpinion .CustomerName {
-        font-size: 11.0434px;
+        font-size: 13px;
     }
     #WhatClientsSay div .customerOpinion .selectedPack {
-        font-size: 8.28252px;
+        font-size: 13px;
     }
     #WhatClientsSay div .customerOpinion .rating span {
-        font-size: 10px;
+        font-size: 13px;
     }
     #WhatClientsSay div .customerOpinion .message {
         margin-top: 20px;
-        font-size: 7.36224px;
+        font-size: 10px;
     }
 }
 
@@ -1283,21 +1249,18 @@ footer #Comptalibcontact .info .websiteLink, footer #Comptalibcontact i:not(.soc
 }
 
 @media (max-width: 386px) {
-    footer #Kubecontact, footer #Comptalibcontact {
-        width: 90%;
-    }
     footer div .line {
         width: 1px;
         height: 60px;
         margin: 0 10px;
     }
     footer img {
-        height: 13px !important;
+        height: 13px;
     }
     footer p, footer a {
-        font-size: 8px !important;
+        font-size: 8px;
     }
     footer p, footer .socialMediaIcons a {
-        font-size: 10px !important;
+        font-size: 10px;
     }
 }

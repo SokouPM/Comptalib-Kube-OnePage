@@ -1,15 +1,17 @@
 'use strict'
+if ($(document).width() > 940) {
 
-let x = 0;
-let dist = 200;
+    let distance = 200;
+    let position = $('#customersSlide').scrollLeft();
 
-$("#nextButton").click(function () {
-    x = x + dist;
-    $("#customersSlide").animate({ scrollLeft: x }, 400);
-});
+    $("#nextButton").click(function () {
+        let maxScrollLeft = $('#customersSlide').prop("scrollWidth") - $('#customersSlide').width();
+        $("#customersSlide").animate({ scrollLeft: position += distance }, 400);
+        if (position > maxScrollLeft) position = maxScrollLeft;
+    });
 
-$("#previousButton").click(function () {
-    x = x - dist;
-    if (x < 0) { x = 0 }
-    $("#customersSlide").animate({ scrollLeft: x }, 400);
-});
+    $("#previousButton").click(function () {
+        $("#customersSlide").animate({ scrollLeft: position -= distance }, 400);
+        if (position < 0) position;
+    });
+}
