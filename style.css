@@ -1017,6 +1017,7 @@ header #contactUs:hover {
 #WhatClientsSay h2 {
     margin-bottom: 50px;
 }
+
 #WhatClientsSay .customerSlide {
     width: 90%;
     margin: auto;
@@ -1091,11 +1092,6 @@ header #contactUs:hover {
     color: var(--color-6);
 }
 
-@media (max-width: 1279px) {
-    #WhatClientsSay .slide-item {
-        margin: 0 60px !important;
-    }
-}
 
 @media (max-width: 940px) {
     #WhatClientsSay {
@@ -1104,8 +1100,8 @@ header #contactUs:hover {
     #WhatClientsSay h2 {
         margin-bottom: 30px;
     }
-    #WhatClientsSay .slide-item {
-        margin: 0 !important;
+    #WhatClientsSay .customerSlide {
+        width: 100%;
     }
     #WhatClientsSay div .customerOpinion {
         width: 200px;
