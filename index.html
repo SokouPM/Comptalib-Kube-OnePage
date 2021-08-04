@@ -27,9 +27,9 @@
             <img src="/sources/logos/LogoKube.png" alt="Logo Kube">
         </div>
         <div>
-            <button id="contactNumber"><i class="fas fa-phone-alt"></i> 06 08 06 00 68</button>
-            <button id="contactUs"
-                onclick="window.location.href='https\:\/\/kubewebagence.com/pages/contactez-nous-kube'">Contactez-nous</button>
+            <button id="contactNumber" onclick="location.href='tel:0608060068'"><i class="fas fa-phone-alt"></i> 06 08
+                06 00 68</button>
+            <button id="contactUs" onclick="location.href='mailto:hello@kubewebagence.com'">Contactez-nous</button>
         </div>
     </header>
 
@@ -43,10 +43,10 @@
             <div id="specialDiscount">
                 <img src="/sources/images/VisuelRestaurant1.png" alt="Site Maison du burger">
                 <h2>Réduction spéciale</h2>
-                <p>Pour ce partenariat avec Comptalib, nous<br> vous offrons <strong>-15 %</strong> sur tous nos
+                <p>Pour ce partenariat avec Comptalib,<br> nous vous offrons <strong>-15 %</strong> sur tous nos
                     packs<br> jusqu’au <strong>31 aout 2021</strong>.
                 </p>
-                <button>Remplir le formulaire</button>
+                <!-- <button>Remplir le formulaire</button> -->
             </div>
             <div id="form">
                 <h2>Vous êtes interessé ?<br> Contactez-nous !</h2>
@@ -59,16 +59,17 @@
                         </div>
                         <div>
                             <input type="radio" id="E-commerce" name="pack" value="E-commerce">
-                            <label for="E-commerce">E-Commerce</label>
+                            <label for="E-commerce">E-commerce</label>
                         </div>
                         <div>
                             <input type="radio" id="Showcase" name="pack" value="Showcase">
                             <label for="Showcase">Vitrine</label>
                         </div>
                     </div>
-                    <input type="text" id="name" name="name" placeholder="Nom" required>
-                    <input type="text" id="mail" name="mail" placeholder="Email" required>
-                    <input type="text" id="phone" name="phone" placeholder="Téléphone" required>
+                    <input type="text" id="name" pattern="^[A-Za-zÀ-ÿ ]{2,50}" name="name" placeholder="Nom" required>
+                    <input type="text" id="mail" pattern="[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}" name="mail"
+                        placeholder="Email" required>
+                    <input type="text" id="phone" pattern="[0-9]{10}" name="phone" placeholder="Téléphone" required>
                     <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
                     <input type="submit" id="submit" value="Envoyer">
                 </form>
@@ -137,8 +138,8 @@
                                 <li>Livré sous 21 jours</li>
                             </ul>
                             <button
-                                onclick="window.location.href='https\:\/\/kubewebagence.com/collections/pack-creation-site-internet/products/site-vitrine'">3
-                                450€ HT</button>
+                                onclick="window.location.href='https\:\/\/kubewebagence.com/collections/pack-creation-site-internet/products/site-vitrine'">1800€
+                                HT</button>
                         </div>
                     </div>
                 </div>
@@ -207,8 +208,8 @@
                                         <li>Livré sous 21 jours</li>
                                     </ul>
                                     <button
-                                        onclick="window.location.href='https\:\/\/kubewebagence.com/collections/pack-creation-site-internet/products/site-vitrine'">3
-                                        450€ HT</button>
+                                        onclick="window.location.href='https\:\/\/kubewebagence.com/collections/pack-creation-site-internet/products/site-vitrine'">1800€
+                                        HT</button>
                                 </div>
                             </div>
                         </div>
@@ -299,15 +300,15 @@
             <div>
                 <div>
                     <img src="/sources/icons/Passionnes.png" alt="">
-                    <p>1 équipe d’experts passionnés du web</p>
+                    <p>1 équipe d’experts <br> passionnés du web</p>
                 </div>
                 <div>
                     <img src="/sources/icons/250sites.png" alt="">
-                    <p>+ de 250 sites web réalisés</p>
+                    <p>+ de 250 <br> sites web réalisés</p>
                 </div>
                 <div>
                     <img src="/sources/icons/Clientssatisfaits.png" alt="">
-                    <p>100% clients satisfaits</p>
+                    <p>100%<br> clients satisfaits</p>
                 </div>
             </div>
         </section>
@@ -419,8 +420,8 @@
             </div>
             <span class="line"></span>
             <div class="contact">
-                <p><i class="fas fa-phone-alt"></i> 06 08 06 00 68</p>
-                <p><i class="fas fa-envelope"></i> hello@kubewebagence.com</p>
+                <a href="tel:0608060068"><i class="fas fa-phone-alt"></i>06 08 06 00 68</a>
+                <a href="mailto:hello@kubewebagence.com"><i class="fas fa-envelope"></i>hello@kubewebagence.com</a>
             </div>
         </div>
         <div id="Comptalibcontact">
@@ -436,7 +437,9 @@
                 </div>
             </div>
             <span class="line"></span>
-            <p><i class="fas fa-envelope"></i> hello@comptalib.com</p>
+            <div class="contact">
+                <a href="mailto:hello@comptalib.com"><i class="fas fa-envelope"></i>hello@comptalib.com</a>
+            </div>
         </div>
     </footer>
 

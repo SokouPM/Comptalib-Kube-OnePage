@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: "Avenir Next LT Pro";
     src: url('/sources/fonts/26301410506.ttf');
 }
@@ -13,13 +13,16 @@
     font-family: "Avenir Next LT Pro";
     font-weight: bold;
     src: url('/sources/fonts/25381880192.ttf');
-}
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
 
 * {
-    font-family: "Avenir Next LT Pro"f;
+    font-family: 'Lato', sans-serif;
+    font-weight: light;
     margin: 0;
     padding: 0;
-    --color-1: #1656FF;
+    --color-1: #4995f6;
     --color-2: #29426F;
     --color-3: #B213C3;
     --color-4: #FF6B00;
@@ -102,7 +105,7 @@ header #twoLogos img {
 
 header #twoLogos #plus {
     padding: 2%;
-    margin: 0 15px;
+    margin: 0 25px;
     background: #FFFFFF;
     box-shadow: 1.8718px 1.8718px 6.86325px rgba(0, 0, 0, 0.3);
     border-radius: 30%;
@@ -127,7 +130,7 @@ header #contactNumber {
 }
 
 header #contactNumber:hover {
-    background: var(--color-1);
+    background: var(--gradient-2);
     border: none;
     color: #FFFFFF;
 }
@@ -135,6 +138,8 @@ header #contactNumber:hover {
 header #contactUs {
     background: var(--gradient-1);
     color: #FFFFFF;
+    margin-left: 10px;
+    box-shadow: 0px 3.20038px 3.20038px rgba(0, 0, 0, 0.2);
 }
 
 header #contactUs:hover {
@@ -143,11 +148,17 @@ header #contactUs:hover {
     border: 3.20038px solid var(--color-3);
 }
 
-@media (max-width: 1175px) {
+@media (max-width: 1300px) {
+    header #contactUs {
+        margin-left: 0px;
+    }
     header {
         padding: 0 1%;
         background-position: left -55px top;
     }
+}
+
+@media (max-width: 1175px) {
     header button {
         width: 154.96px;
         height: 43.08px;
@@ -203,8 +214,11 @@ header #contactUs:hover {
         width: 89.12px;
         height: 24.78px;
         padding: 0;
-        font-size: 7.9925px;
+        font-size: 6px;
         border-radius: 7.9925px;
+    }
+    header #contactUs {
+        margin-left: 10px;
     }
     header #contactNumber {
         border-width: 1.5985px;
@@ -223,6 +237,7 @@ header #contactUs:hover {
 #title p {
     color: var(--color-2);
     font-size: 20.0024px;
+    margin-top: -40px;
 }
 
 @media (max-width: 940px) {
@@ -247,9 +262,9 @@ header #contactUs:hover {
 
 #contactForm #specialDiscount {
     text-align: center;
-    width: 400px;
+    width: 430px;
     color: var(--color-1);
-    margin-right: 100px;
+    margin-right: 70px;
 }
 
 #contactForm #specialDiscount h2 {
@@ -313,17 +328,17 @@ header #contactUs:hover {
     font-size: 16.0019px;
     text-align: center;
     color: var(--color-2);
-    margin: 10px 0;
+    margin: 10px 0 20px;
 }
 
 #contactForm #form form #inputRadio {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 10px;
 }
 
 #contactForm #form form input:not(#submit), #contactForm #form form textarea {
-    font-family: "Avenir Next LT Pro";
+    font-family: 'Lato', sans-serif;
     background: rgba(249, 249, 251, 0.2);
     border: 2.40029px solid var(--color-1);
     border-radius: 14.4017px;
@@ -442,6 +457,7 @@ header #contactUs:hover {
 #Our3packs p {
     font-size: 20.0024px;
     margin-bottom: 50px;
+    color: var(--color-2);
 }
 
 #Our3packs #packDeskOnly {
@@ -450,12 +466,18 @@ header #contactUs:hover {
     align-items: center;
 }
 
+#Our3packs #packDeskOnly img {
+    width: 245.88px;
+}
+
 #Our3packs div .packInfo {
     margin: 0 20px;
 }
 
 #Our3packs div .packInfo ul {
-    padding-left: 1rem;
+    text-align: left;
+    width: max-content;
+    margin: auto;
 }
 
 #Our3packs div div .pack h2 {
@@ -463,7 +485,7 @@ header #contactUs:hover {
     font-size: 24.0029px;
     color: #FFFFFF;
     border-radius: 32.0038px 32.0038px 0px 0px;
-    padding: 15px 80px;
+    padding: 15px 60px;
     margin-bottom: 0;
 }
 
@@ -479,7 +501,7 @@ header #contactUs:hover {
 }
 
 #Our3packs div div .pack ul li {
-    font-size: 16.0019px;
+    font-size: 12px;
     line-height: 240.6%;
     color: var(--color-2);
 }
@@ -524,7 +546,7 @@ header #contactUs:hover {
 }
 
 #Our3packs div #ecommercePack .pack h2 {
-    padding: 25px 90px;
+    padding: 25px 60px;
 }
 
 #Our3packs div #ecommercePack .pack .packContent {
@@ -553,7 +575,7 @@ header #contactUs:hover {
 }
 
 #Our3packs div #showcasePack .pack .packContent {
-    border: 3.20038px solid var(--color-1);
+    border: 3.20038px solid #1656FF;
 }
 
 @media (min-width: 1175px) {
@@ -603,7 +625,7 @@ header #contactUs:hover {
         padding: 15px 0;
     }
     #Our3packs #packMobileOnly div .pack ul li, #Our3packs #packMobileOnly #ecommercePack .pack ul li {
-        font-size: 11.5021px;
+        font-size: 10px;
         line-height: 240.6%;
     }
     @media (max-width: 575px) {
@@ -770,11 +792,13 @@ header #contactUs:hover {
 
 #Ourproductions p {
     font-size: 24.0029px;
+    margin: 10px;
 }
 
 #Ourproductions a {
     font-size: 16.0019px;
     text-decoration: none;
+    color: var(--color-1);
 }
 
 #Ourproductions a:hover {
@@ -1093,7 +1117,6 @@ header #contactUs:hover {
     color: var(--color-6);
 }
 
-
 @media (max-width: 940px) {
     #WhatClientsSay {
         margin-top: 50px;
@@ -1190,12 +1213,22 @@ footer div .line {
     margin: 0 20px;
 }
 
-footer #Kubecontact .contact p, footer #Comptalibcontact p {
-    font-size: 20px;
-    color: var(--color-2);
+footer #Kubecontact .contact a {
+    display: flex;
 }
 
-footer #Kubecontact .contact p:nth-child(1) {
+footer #Kubecontact .contact a, footer #Comptalibcontact .contact a {
+    font-size: 20px;
+    color: var(--color-2);
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+footer #Kubecontact .contact a i, footer #Comptalibcontact .contact a i {
+    margin-right: 10px;
+}
+
+footer #Kubecontact .contact a:nth-child(1) {
     margin-bottom: 20px;
 }
 
@@ -1247,6 +1280,9 @@ footer #Comptalibcontact .info .websiteLink, footer #Comptalibcontact i:not(.soc
     footer #Kubecontact .contact p:nth-child(1) {
         margin-bottom: 10px;
     }
+    footer #Kubecontact .contact a, footer #Comptalibcontact a {
+        font-size: 11px !important;
+    }
 }
 
 @media (max-width: 386px) {
@@ -1259,7 +1295,7 @@ footer #Comptalibcontact .info .websiteLink, footer #Comptalibcontact i:not(.soc
         height: 13px;
     }
     footer p, footer a {
-        font-size: 8px;
+        font-size: 8px !important;
     }
     footer p, footer .socialMediaIcons a {
         font-size: 10px;
