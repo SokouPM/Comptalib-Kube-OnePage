@@ -1,4 +1,22 @@
 $(document).ready(function () {
+
+  // Productions
+  $('.packsSlide').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 940,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        }
+      }
+    ]
+  });
+
+  // Productions
   $('.productionSlide').slick({
     infinite: true,
     slidesToShow: 3,
@@ -16,6 +34,7 @@ $(document).ready(function () {
     ]
   });
 
+  // Customers
   $('.customerSlide').slick({
     infinite: true,
     slidesToShow: 3,

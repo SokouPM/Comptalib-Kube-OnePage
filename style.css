@@ -245,21 +245,21 @@ header #contactUs:hover {
 
 #contactForm #specialDiscount {
     text-align: center;
-    width: 430px;
+    width: 450px;
     color: var(--color-1);
-    margin-right: 70px;
+    margin-right: 50px;
 }
 
 #contactForm #specialDiscount h2 {
     font-style: normal;
     font-weight: bold;
-    font-size: 32.0038px;
-    line-height: 39px;
+    font-size: 40px;
     margin: 10px 0;
 }
 
 #contactForm #specialDiscount p {
-    font-size: 20px;
+    font-size: 22px;
+    line-height: 30px;
     margin: 10px 0;
 }
 
@@ -442,30 +442,28 @@ header #contactUs:hover {
     margin-bottom: 50px;
     color: var(--color-2);
 }
+#Our3packs .packsSlide {
+    width: 90%;
+    margin: auto;
+}
 
-#Our3packs #packDeskOnly {
+#Our3packs img {
+    height: 200px;
+    width: 300px;
+}
+
+#Our3packs div .packInfo {
+    margin: 20px auto;
+    width: max-content;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#Our3packs #packDeskOnly img {
-    width: 245.88px;
-}
-
-#Our3packs div .packInfo {
-    margin: 0 20px;
-}
-
-#Our3packs div .packInfo ul {
-    text-align: left;
-    width: max-content;
-    margin: auto;
-}
-
 #Our3packs div div .pack h2 {
     font-weight: bold;
-    font-size: 24.0029px;
+    font-size: 22px;
     color: #FFFFFF;
     border-radius: 32.0038px 32.0038px 0px 0px;
     padding: 15px 60px;
@@ -476,15 +474,22 @@ header #contactUs:hover {
     box-shadow: 2.40029px 2.40029px 12.8015px rgba(0, 0, 0, 0.4);
     border-radius: 32.0038px;
     margin-top: 20px;
+    width: 330px;
 }
 
 #Our3packs div div .pack ul {
-    margin-top: 15px;
+    margin: 15px auto;
     list-style: inside;
 }
 
+#Our3packs div .packInfo ul {
+    text-align: left;
+    width: max-content;
+    margin: auto;
+}
+
 #Our3packs div div .pack ul li {
-    font-size: 12px;
+    font-size: 15px;
     line-height: 240.6%;
     color: var(--color-2);
 }
@@ -493,10 +498,10 @@ header #contactUs:hover {
     border-radius: 16.0019px;
     color: #FFFFFF;
     font-weight: bold;
-    font-size: 17.6021px;
+    font-size: 20px;
     border: none;
     margin: 5px 0 20px 0;
-    width: 130px;
+    width: 160px;
     height: 60px;
 }
 
@@ -528,10 +533,6 @@ header #contactUs:hover {
     background: var(--gradient-4);
 }
 
-#Our3packs div #ecommercePack .pack h2 {
-    padding: 25px 60px;
-}
-
 #Our3packs div #ecommercePack .pack .packContent {
     border: 3.20038px solid var(--color-7);
 }
@@ -540,11 +541,6 @@ header #contactUs:hover {
     border: 3.20038px solid var(--color-7);
     background: none;
     color: var(--color-7);
-}
-
-#Our3packs div #ecommercePack .pack .packContent ul li {
-    font-size: 16.0019px;
-    line-height: 300%;
 }
 
 #Our3packs div #showcasePack div h2, #Our3packs div #showcasePack div button {
@@ -561,62 +557,18 @@ header #contactUs:hover {
     border: 3.20038px solid #1656FF;
 }
 
-@media (min-width: 1175px) {
-    #Our3packs #packMobileOnly * {
-        display: none;
-    }
+@media (max-width: 1218px) {
+
 }
 
-@media (max-width: 1174px) {
-    #Our3packs {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-top: 90px;
-    }
-    #Our3packs p {
-        font-size: 14px;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #Our3packs #packDeskOnly * {
-        display: none;
-    }
-    #Our3packs #packMobileOnly img {
-        width: 203.43px;
-        height: 143.52px;
-    }
-    #Our3packs #packMobileOnly .packInfo {
-        width: max-content;
-        margin: auto;
-    }
-    #Our3packs #packMobileOnly div .pack, #Our3packs #packMobileOnly #ecommercePack .pack {
-        width: 250px;
-        margin-bottom: 20px;
-    }
-    #Our3packs #packMobileOnly div .pack .packContent ul, #Our3packs #packMobileOnly #ecommercePack .pack .packContent ul {
-        padding: 0;
-    }
-    #Our3packs #packMobileOnly div .pack .packContent, #Our3packs #packMobileOnly #ecommercePack .pack .packContent {
-        padding: 0 5px;
-    }
-    #Our3packs #packMobileOnly div .pack h2, #Our3packs #packMobileOnly #ecommercePack .pack h2 {
-        font-size: 17.2246px;
-        line-height: 21px;
-        border-radius: 22.9662px 22.9662px 0px 0px;
-        padding: 15px 0;
-    }
-    #Our3packs #packMobileOnly div .pack ul li, #Our3packs #packMobileOnly #ecommercePack .pack ul li {
-        font-size: 10px;
-        line-height: 240.6%;
-    }
-    @media (max-width: 575px) {
-        #Our3packs #packMobileOnly .slide-item {
-            padding: 0 25px;
-        }
-    }
+@media (max-width: 1136px) {
+
 }
+
+@media (max-width: 940px) {
+
+}
+
 
 /************************************* Section Kube, what is it ? *************************************/
 
