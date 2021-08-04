@@ -1,0 +1,1303 @@
+/* @font-face {
+    font-family: "Avenir Next LT Pro";
+    src: url('/sources/fonts/26301410506.ttf');
+}
+
+@font-face {
+    font-family: "Avenir Next LT Pro";
+    font-style: italic;
+    src: url('/sources/fonts/25728576873.ttf');
+}
+
+@font-face {
+    font-family: "Avenir Next LT Pro";
+    font-weight: bold;
+    src: url('/sources/fonts/25381880192.ttf');
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+    font-weight: light;
+    margin: 0;
+    padding: 0;
+    --color-1: #4995f6;
+    --color-2: #29426F;
+    --color-3: #B213C3;
+    --color-4: #FF6B00;
+    --color-5: #3AD0FF;
+    --color-6: #FDC706;
+    --color-7: #DB2700;
+    --gradient-1: linear-gradient(180deg, #B213C3 0%, #71118F 100%);
+    --gradient-2: linear-gradient(360deg, #1656FF -12.27%, #5CADF3 107.02%);
+    --gradient-3: linear-gradient(180deg, #F9ED86 0%, #FDC708 100%);
+    --gradient-4: linear-gradient(180deg, #FF6B00 0%, #DB2700 100%);
+}
+
+button, input[type=submit] {
+    cursor: pointer;
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+h1, h2 {
+    font-weight: bold;
+    color: var(--color-1);
+    font-size: 48.0057px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.darkerWordTitle {
+    color: var(--color-2);
+}
+
+.card {
+    border: none;
+}
+
+.none {
+    display: none;
+}
+
+@media (max-width: 940px) {
+    h1, h2 {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    section {
+        margin-bottom: 1px;
+    }
+}
+
+/************************************* Header *************************************/
+
+header {
+    background: url("/sources/forms/Forme7.png") no-repeat top left;
+    min-height: 152px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3% 0 50px;
+}
+
+header #specialWebOffer {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 29px;
+    padding-bottom: 50px;
+    color: #FFFFFF;
+}
+
+header #twoLogos {
+    display: flex;
+    align-items: center;
+}
+
+header #twoLogos img {
+    height: 37.44px;
+}
+
+header #twoLogos #plus {
+    padding: 2%;
+    margin: 0 25px;
+    background: #FFFFFF;
+    box-shadow: 1.8718px 1.8718px 6.86325px rgba(0, 0, 0, 0.3);
+    border-radius: 30%;
+    font-size: 100%;
+    color: var(--color-1);
+}
+
+header button {
+    border: none;
+    width: 178.42px;
+    height: 49.61px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16.0019px;
+    border-radius: 16.0019px;
+}
+
+header #contactNumber {
+    background: #FFFFFF;
+    border: 3.20038px solid var(--color-1);
+    color: var(--color-1);
+}
+
+header #contactNumber:hover {
+    background: var(--gradient-2);
+    border: none;
+    color: #FFFFFF;
+}
+
+header #contactUs {
+    background: var(--gradient-1);
+    color: #FFFFFF;
+    margin-left: 10px;
+    box-shadow: 0px 3.20038px 3.20038px rgba(0, 0, 0, 0.2);
+}
+
+header #contactUs:hover {
+    background: #FFFFFF;
+    color: var(--color-3);
+    border: 3.20038px solid var(--color-3);
+}
+
+@media (max-width: 1300px) {
+    header #contactUs {
+        margin-left: 0px;
+    }
+    header {
+        padding: 0 1%;
+        background-position: left -55px top;
+    }
+}
+
+@media (max-width: 1175px) {
+    header button {
+        width: 154.96px;
+        height: 43.08px;
+        border-radius: 13px;
+    }
+}
+
+@media (max-width: 1170px) {
+    header {
+        background-position: left -195px top;
+    }
+    header #specialWebOffer {
+        font-size: 21.9873px;
+    }
+    header button {
+        width: 124.96px;
+        height: 33.08px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 940px) {
+    header {
+        min-height: 55px;
+        background: url("/sources/forms/mobile/Forme7.png") no-repeat top left;
+        margin-bottom: 80px;
+    }
+    header #specialWebOffer {
+        font-size: 11.9873px;
+        line-height: 25px;
+        padding-bottom: 0;
+        margin-left: 5px;
+    }
+    header #twoLogos {
+        position: absolute;
+        width: max-content;
+        top: 90px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    header #twoLogos img {
+        height: 21.19px;
+    }
+    header #twoLogos #plus {
+        margin: 0 15px;
+        background: #FFFFFF;
+        box-shadow: 1.07648px 1.07648px 3.9471px rgba(0, 0, 0, 0.3);
+        font-size: 10px;
+        color: var(--color-1);
+    }
+    header button {
+        width: 89.12px;
+        height: 24.78px;
+        padding: 0;
+        font-size: 6px;
+        border-radius: 7.9925px;
+    }
+    header #contactUs {
+        margin-left: 10px;
+    }
+    header #contactNumber {
+        border-width: 1.5985px;
+    }
+    header #contactUs:hover {
+        border-width: 1.5985px;
+    }
+}
+
+/************************************* Section Title *************************************/
+
+#title {
+    text-align: center;
+}
+
+#title p {
+    color: var(--color-2);
+    font-size: 20.0024px;
+    margin-top: -40px;
+}
+
+@media (max-width: 940px) {
+    #title h1, #title p {
+        width: 80%;
+        margin: auto;
+    }
+    #title p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+
+/************************************* Section Contact form *************************************/
+
+#contactForm {
+    background: url("/sources/forms/Forme1.png") no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contactForm #specialDiscount {
+    text-align: center;
+    width: 430px;
+    color: var(--color-1);
+    margin-right: 70px;
+}
+
+#contactForm #specialDiscount h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32.0038px;
+    line-height: 39px;
+    margin: 10px 0;
+}
+
+#contactForm #specialDiscount p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#contactForm #specialDiscount button {
+    margin-top: 10px;
+    width: 245.63px;
+    height: 58.41px;
+    font-size: 16.0019px;
+    border-radius: 16.0019px;
+    background: #FFFFFF;
+    border: 3.20038px solid var(--color-1);
+    color: var(--color-1);
+}
+
+#contactForm #specialDiscount button:hover {
+    background: var(--color-1);
+    border: none;
+    color: #FFFFFF;
+}
+
+#contactForm #form {
+    width: 416.82px;
+    background: #FFFFFF;
+    box-shadow: 2.5443px 2.5443px 12.4335px rgba(0, 0, 0, 0.4);
+    border-radius: 32.0038px;
+    margin-left: 100px;
+}
+
+#contactForm #form h2 {
+    border-radius: 32.0038px 32.0038px 0px 0px;
+    background: var(--gradient-2);
+    font-weight: bold;
+    font-size: 24.0029px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 20px 0;
+    color: #FFFFFF;
+}
+
+#contactForm #form form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+    padding-bottom: 25px;
+}
+
+#contactForm #form form p {
+    font-weight: bold;
+    font-size: 16.0019px;
+    text-align: center;
+    color: var(--color-2);
+    margin: 10px 0 20px;
+}
+
+#contactForm #form form #inputRadio {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+#contactForm #form form input:not(#submit), #contactForm #form form textarea {
+    font-family: 'Lato', sans-serif;
+    background: rgba(249, 249, 251, 0.2);
+    border: 2.40029px solid var(--color-1);
+    border-radius: 14.4017px;
+    padding: 10px;
+    font-size: 16.0019px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+#contactForm #form form #submit {
+    width: 165.75px;
+    height: 46.87px;
+    margin: auto;
+    font-weight: bold;
+    font-size: 20.0024px;
+    color: #FFFFFF;
+    background: var(--gradient-2);
+    border: none;
+    box-shadow: 0px 3.20038px 3.20038px rgba(0, 0, 0, 0.2);
+    border-radius: 16.0019px;
+}
+
+#contactForm #form form #submit:hover {
+    color: var(--color-1);
+    background: #FFFFFF;
+    border: 3.20038px solid var(--color-1);
+}
+
+@media (max-width: 1024px) {
+    #contactForm #specialDiscount {
+        margin-right: 25px;
+    }
+    #contactForm #form {
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 940px) {
+    #contactForm {
+        background: url("/sources/forms/mobile/Forme1.png") no-repeat;
+        flex-direction: column;
+    }
+    #contactForm #specialDiscount {
+        margin-right: 0;
+        margin-bottom: 50px;
+        width: auto;
+    }
+    #contactForm #specialDiscount img {
+        width: 222.25px;
+    }
+    #contactForm #specialDiscount h2 {
+        font-size: 18.4056px;
+        line-height: 22px;
+        margin: 0;
+    }
+    #contactForm #specialDiscount p {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+    #contactForm #specialDiscount button {
+        width: 141.26px;
+        height: 33.59px;
+        font-size: 11.5035px;
+        border-radius: 9.2028px;
+        border-width: 1.5985px;
+    }
+    #contactForm #form {
+        margin-left: 0;
+        width: 311.61px;
+        box-shadow: 2.5443px 2.5443px 12.4335px rgba(0, 0, 0, 0.4);
+        border-radius: 22.0951px;
+    }
+    #contactForm #form h2 {
+        border-radius: 22.0951px 22.0951px 0px 0px;
+        font-size: 16.5713px;
+        padding: 15px 0;
+        margin-bottom: 10px;
+    }
+    #contactForm #form form {
+        padding: 0 20px;
+        padding-bottom: 20px;
+    }
+    #contactForm #form form p {
+        font-size: 16.0019px;
+        margin: 5px 0;
+    }
+    #contactForm #form form #inputRadio {
+        margin-bottom: 5px;
+        font-size: 11.5021px;
+    }
+    #contactForm #form form input:not(#submit), #contactForm #form form textarea {
+        border-radius: 9.9428px;
+        padding: 5px;
+        font-size: 11.5021px;
+    }
+    #contactForm #form form #submit {
+        width: 114.43px;
+        height: 32.36px;
+        font-size: 13.8094px;
+        border-radius: 11.0476px;
+    }
+    #contactForm #form form #submit:hover {
+        border-width: 1.5985px;
+    }
+}
+
+/************************************* Section Our 3 packs *************************************/
+
+#Our3packs {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 150px;
+}
+
+#Our3packs p {
+    font-size: 20.0024px;
+    margin-bottom: 50px;
+    color: var(--color-2);
+}
+
+#Our3packs #packDeskOnly {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Our3packs #packDeskOnly img {
+    width: 245.88px;
+}
+
+#Our3packs div .packInfo {
+    margin: 0 20px;
+}
+
+#Our3packs div .packInfo ul {
+    text-align: left;
+    width: max-content;
+    margin: auto;
+}
+
+#Our3packs div div .pack h2 {
+    font-weight: bold;
+    font-size: 24.0029px;
+    color: #FFFFFF;
+    border-radius: 32.0038px 32.0038px 0px 0px;
+    padding: 15px 60px;
+    margin-bottom: 0;
+}
+
+#Our3packs div div .pack {
+    box-shadow: 2.40029px 2.40029px 12.8015px rgba(0, 0, 0, 0.4);
+    border-radius: 32.0038px;
+    margin-top: 20px;
+}
+
+#Our3packs div div .pack ul {
+    margin-top: 15px;
+    list-style: inside;
+}
+
+#Our3packs div div .pack ul li {
+    font-size: 12px;
+    line-height: 240.6%;
+    color: var(--color-2);
+}
+
+#Our3packs div div .pack button {
+    border-radius: 16.0019px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 17.6021px;
+    border: none;
+    margin: 5px 0 20px 0;
+    width: 130px;
+    height: 60px;
+}
+
+#Our3packs div .pack .packContent {
+    border-radius: 0 0 32.0038px 32.0038px;
+}
+
+#Our3packs div #redesignPack div h2, #Our3packs div #redesignPack div button {
+    background: var(--gradient-3);
+}
+
+#Our3packs div #redesignPack .pack .packContent {
+    border: 3.20038px solid var(--color-6);
+}
+
+#Our3packs div #redesignPack .pack button:hover {
+    border: 3.20038px solid var(--color-6);
+    background: none;
+    color: var(--color-6);
+}
+
+#Our3packs div #showcasePack .pack button:hover {
+    border: 3.20038px solid var(--color-1);
+    background: none;
+    color: var(--color-1);
+}
+
+#Our3packs div #ecommercePack div h2, #Our3packs div #ecommercePack div button {
+    background: var(--gradient-4);
+}
+
+#Our3packs div #ecommercePack .pack h2 {
+    padding: 25px 60px;
+}
+
+#Our3packs div #ecommercePack .pack .packContent {
+    border: 3.20038px solid var(--color-7);
+}
+
+#Our3packs div #ecommercePack .pack button:hover {
+    border: 3.20038px solid var(--color-7);
+    background: none;
+    color: var(--color-7);
+}
+
+#Our3packs div #ecommercePack .pack .packContent ul li {
+    font-size: 16.0019px;
+    line-height: 300%;
+}
+
+#Our3packs div #showcasePack div h2, #Our3packs div #showcasePack div button {
+    background: var(--gradient-2);
+}
+
+#Our3packs div #showcasePack .pack button:hover {
+    border: 3.20038px solid var(--color-1);
+    background: none;
+    color: var(--color-1);
+}
+
+#Our3packs div #showcasePack .pack .packContent {
+    border: 3.20038px solid #1656FF;
+}
+
+@media (min-width: 1175px) {
+    #Our3packs #packMobileOnly * {
+        display: none;
+    }
+}
+
+@media (max-width: 1174px) {
+    #Our3packs {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 90px;
+    }
+    #Our3packs p {
+        font-size: 14px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #Our3packs #packDeskOnly * {
+        display: none;
+    }
+    #Our3packs #packMobileOnly img {
+        width: 203.43px;
+        height: 143.52px;
+    }
+    #Our3packs #packMobileOnly .packInfo {
+        width: max-content;
+        margin: auto;
+    }
+    #Our3packs #packMobileOnly div .pack, #Our3packs #packMobileOnly #ecommercePack .pack {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    #Our3packs #packMobileOnly div .pack .packContent ul, #Our3packs #packMobileOnly #ecommercePack .pack .packContent ul {
+        padding: 0;
+    }
+    #Our3packs #packMobileOnly div .pack .packContent, #Our3packs #packMobileOnly #ecommercePack .pack .packContent {
+        padding: 0 5px;
+    }
+    #Our3packs #packMobileOnly div .pack h2, #Our3packs #packMobileOnly #ecommercePack .pack h2 {
+        font-size: 17.2246px;
+        line-height: 21px;
+        border-radius: 22.9662px 22.9662px 0px 0px;
+        padding: 15px 0;
+    }
+    #Our3packs #packMobileOnly div .pack ul li, #Our3packs #packMobileOnly #ecommercePack .pack ul li {
+        font-size: 10px;
+        line-height: 240.6%;
+    }
+    @media (max-width: 575px) {
+        #Our3packs #packMobileOnly .slide-item {
+            padding: 0 25px;
+        }
+    }
+}
+
+/************************************* Section Kube, what is it ? *************************************/
+
+#KubeWhatIsIt {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 150px 0;
+    margin-bottom: 0;
+    background: url("/sources/forms/Forme5.png") no-repeat, url("/sources/forms/Forme2.png") no-repeat right;
+}
+
+#KubeWhatIsIt img {
+    height: 509.79px;
+}
+
+#KubeWhatIsIt #description {
+    width: 517.16px;
+}
+
+#KubeWhatIsIt #description * {
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+#KubeWhatIsIt #description h2 {
+    font-weight: bold;
+    font-size: 38.4046px;
+    line-height: 47px;
+    text-align: left;
+}
+
+#KubeWhatIsIt #description p, #KubeWhatIsIt #description a {
+    font-size: 19.2023px;
+    line-height: 23px;
+}
+
+#KubeWhatIsIt #description a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#KubeWhatIsIt #description a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+    #KubeWhatIsIt {
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 1016px) {
+    #KubeWhatIsIt {
+        padding-right: 2%;
+    }
+}
+
+@media (max-width: 962px) {
+    #KubeWhatIsIt {
+        background: url("/sources/forms/mobile/Forme5.png") no-repeat top left, url("/sources/forms/Forme2.png") no-repeat bottom right;
+    }
+    #KubeWhatIsIt img {
+        height: 290px;
+    }
+    #KubeWhatIsIt #description a {
+        width: 100%;
+        justify-self: center;
+    }
+    #KubeWhatIsIt #description h2 {
+        font-size: 22.0867px;
+        line-height: 27px;
+    }
+    #KubeWhatIsIt #description p, #KubeWhatIsIt #description a {
+        font-size: 11.5021px;
+        line-height: 14px;
+    }
+    #KubeWhatIsIt #description a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 940px) {
+    #KubeWhatIsIt {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 568px) {
+    #KubeWhatIsIt {
+        padding-right: 0;
+        min-height: 591px;
+        margin-top: 50px;
+        padding-top: 90px;
+        margin-bottom: -50px;
+        padding-bottom: 0;
+        flex-direction: column;
+        background: url("/sources/forms/mobile/Forme5.png") no-repeat top left, url("/sources/forms/Forme2.png") no-repeat bottom right -350px;
+    }
+    #KubeWhatIsIt img {
+        height: 290px;
+        margin-bottom: 20px;
+    }
+    #KubeWhatIsIt #description {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 150px;
+    }
+    #KubeWhatIsIt #description * {
+        text-align: center;
+    }
+    #KubeWhatIsIt #description a {
+        text-align: center;
+        width: 100%;
+        justify-self: center;
+    }
+    #KubeWhatIsIt #description h2 {
+        width: max-content;
+        margin: 10px auto;
+        font-size: 22.0867px;
+        line-height: 27px;
+    }
+    #KubeWhatIsIt #description p, #KubeWhatIsIt #description a {
+        font-size: 11.5021px;
+        line-height: 14px;
+    }
+    #KubeWhatIsIt #description a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+/************************************* Section Our production *************************************/
+
+#Ourproductions h2 {
+    font-weight: bold;
+    margin-bottom: 80px;
+    color: var(--color-1);
+}
+
+#Ourproductions, #Ourproductions a, #Ourproductions a:visited {
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-2);
+}
+
+#Ourproductions * {
+    margin-bottom: 20px;
+}
+
+#Ourproductions img {
+    margin: auto;
+}
+
+#Ourproductions p {
+    font-size: 24.0029px;
+    margin: 10px;
+}
+
+#Ourproductions a {
+    font-size: 16.0019px;
+    text-decoration: none;
+    color: var(--color-1);
+}
+
+#Ourproductions a:hover {
+    text-decoration: underline;
+}
+
+#Ourproductions .productionSlide {
+    width: 90%;
+    margin: auto;
+}
+
+.slick-prev, .slick-next, .slick-prev:before, .slick-next:before {
+    color: black;
+}
+
+@media (max-width: 767px) {
+    #Ourproductions h2 {
+        margin-bottom: 40px;
+    }
+    #Ourproductions p {
+        font-size: 20px;
+    }
+    #Ourproductions a {
+        font-size: 16px;
+    }
+    #Ourproductions .productionSlide {
+        width: 100%;
+    }
+}
+
+/************************************* Section Our engagements *************************************/
+
+#Ourengagements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/sources/forms/Forme4.png) bottom left no-repeat;
+    margin-bottom: 0;
+}
+
+#Ourengagements #text div, #Ourengagements #icons div div {
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 2.40029px 2.40029px 12.8015px rgba(0, 0, 0, 0.4);
+    border-radius: 32.0038px;
+}
+
+#Ourengagements #text {
+    margin-right: 25px;
+    width: 436.05px;
+}
+
+#Ourengagements #text div {
+    font-size: 16.0019px;
+    color: var(--color-2);
+    padding: 50px;
+    line-height: 240.6%;
+}
+
+#Ourengagements #icons {
+    display: flex;
+    justify-content: center;
+    width: 668px;
+    height: 562px;
+    background: url(/sources/forms/Forme3.png) center no-repeat;
+    margin-bottom: 125px;
+    margin-left: 25px;
+}
+
+#Ourengagements #icons div div {
+    width: 210.43px;
+    height: 210.43px;
+    font-weight: bold;
+    font-size: 32.0038px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 20px;
+    padding-top: 15px;
+}
+
+#Ourengagements #icons div div img {
+    width: 90px;
+}
+
+#Ourengagements #icons #column1 div:nth-child(1) {
+    color: var(--color-3);
+}
+
+#Ourengagements #icons #column1 div:nth-child(2) {
+    color: var(--color-4);
+}
+
+#Ourengagements #icons #column2 div:nth-child(1) {
+    color: var(--color-1);
+}
+
+#Ourengagements #icons #column2 div:nth-child(2) {
+    color: var(--color-5);
+}
+
+#Ourengagements #icons #column2 {
+    margin-top: 80px;
+}
+
+@media (max-width: 1173px) {
+    #Ourengagements {
+        padding: 0 10px;
+    }
+    #Ourengagements #text div, #Ourengagements #icons div div {
+        border-radius: 18.4056px;
+    }
+    #Ourengagements #text {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Ourengagements #text div {
+        font-size: 9.2028px;
+        padding: 20px;
+        line-height: 240.6%;
+        width: 315.16px;
+        margin-right: 0;
+    }
+    #Ourengagements #icons {
+        padding: 0;
+        width: 455px;
+        height: 362px;
+        margin-left: 10px;
+        background: url(/sources/forms/mobile/Forme3.png) center no-repeat;
+    }
+    #Ourengagements #icons div div {
+        width: 121.02px;
+        height: 121.02px;
+        font-weight: bold;
+        font-size: 18.4056px;
+        margin: 30px 15px;
+        padding-top: 15px;
+    }
+    #Ourengagements #icons div div img {
+        width: 36.81px;
+    }
+}
+
+@media (max-width: 940px) {
+    #Ourengagements {
+        margin-top: -70px;
+        position: relative;
+        flex-direction: column-reverse;
+        background: none;
+        margin-bottom: 50px;
+        background: url(/sources/forms/mobile/Forme3.png) center no-repeat;
+    }
+    #Ourengagements #text {
+        margin-right: 0;
+        align-items: center;
+        width: auto;
+    }
+    #Ourengagements #text h2 {
+        position: absolute;
+        top: 20px;
+    }
+    #Ourengagements #text div {
+        width: 80%;
+    }
+    #Ourengagements #icons {
+        margin-bottom: 50px;
+        background: none;
+        width: auto;
+    }
+    #Ourengagements #icons #column1, #Ourengagements #icons #column2 {
+        margin-top: 70px;
+    }
+}
+
+/************************************* Section Our key figures *************************************/
+
+#Ourkeyfigures {
+    padding: 0 15%;
+    margin-top: 70px;
+}
+
+#Ourkeyfigures div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+#Ourkeyfigures div div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 311px;
+}
+
+#Ourkeyfigures div div img {
+    height: 172.46px;
+}
+
+#Ourkeyfigures div div p {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 28.0038px;
+    line-height: 39px;
+    text-align: center;
+    color: var(--color-2);
+}
+
+@media (max-width: 1385px) {
+    #Ourkeyfigures {
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 940px) {
+    #Ourkeyfigures div {
+        flex-direction: column;
+        align-items: center;
+    }
+    #Ourkeyfigures div div img {
+        height: 92.49px;
+    }
+    #Ourkeyfigures div div p {
+        margin-top: 20px;
+        font-size: 18.4056px;
+        line-height: 22px;
+    }
+}
+
+/************************************* Section What client say *************************************/
+
+#WhatClientsSay {
+    background: url(/sources/forms/Forme6.png) no-repeat;
+    margin-bottom: 0;
+    margin-top: 200px;
+    position: relative;
+}
+
+#WhatClientsSay h2 {
+    margin-bottom: 50px;
+}
+
+#WhatClientsSay .customerSlide {
+    width: 90%;
+    margin: auto;
+}
+
+#WhatClientsSay div .customerOpinion {
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    padding-top: 50px;
+    margin: 60px auto;
+    background: #FFFFFF;
+    box-shadow: 2.40029px 2.40029px 12.8015px rgba(0, 0, 0, 0.4);
+    border-radius: 32.0038px;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#WhatClientsSay div .customerOpinion img {
+    filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.25));
+    height: 95px;
+    width: 95px;
+    position: absolute;
+    top: -50px;
+}
+
+#WhatClientsSay div .customerOpinion .CustomerName, #WhatClientsSay div .customerOpinion .selectedPack {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#WhatClientsSay div .customerOpinion .CustomerName {
+    font-size: 19.2023px;
+}
+
+#WhatClientsSay div .customerOpinion .selectedPack {
+    font-size: 14.4017px;
+}
+
+#WhatClientsSay div .customerOpinion .message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12.8015px;
+    line-height: 240.6%;
+    color: var(--color-2);
+}
+
+.showcasePack {
+    border: 3.20038px solid var(--color-1);
+}
+
+.showcasePack .CustomerName, .showcasePack .selectedPack, .showcasePack .checked {
+    color: var(--color-1);
+}
+
+.ecommercePack {
+    border: 3.20038px solid var(--color-4);
+}
+
+.ecommercePack .CustomerName, .ecommercePack .selectedPack, .ecommercePack .checked {
+    color: var(--color-4);
+}
+
+.redesignPack {
+    border: 3.20038px solid var(--color-6);
+}
+
+.redesignPack .CustomerName, .redesignPack .selectedPack, .redesignPack .checked {
+    color: var(--color-6);
+}
+
+@media (max-width: 940px) {
+    #WhatClientsSay {
+        margin-top: 50px;
+    }
+    #WhatClientsSay h2 {
+        margin-bottom: 30px;
+    }
+    #WhatClientsSay .customerSlide {
+        width: 100%;
+    }
+    #WhatClientsSay div .customerOpinion {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        padding: 10px;
+        padding-top: 25px;
+        border-radius: 32.0038px
+    }
+    #WhatClientsSay div .customerOpinion img {
+        height: 50px;
+        width: 50px;
+        top: -29px;
+    }
+    #WhatClientsSay div .customerOpinion .CustomerName {
+        font-size: 13px;
+    }
+    #WhatClientsSay div .customerOpinion .selectedPack {
+        font-size: 13px;
+    }
+    #WhatClientsSay div .customerOpinion .rating span {
+        font-size: 13px;
+    }
+    #WhatClientsSay div .customerOpinion .message {
+        margin-top: 20px;
+        font-size: 10px;
+    }
+}
+
+/************************************* Footer *************************************/
+
+footer {
+    background: #FFFFFF;
+    box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+}
+
+footer #Kubecontact, footer #Comptalibcontact {
+    background: #FFFFFF;
+    box-shadow: 0.18px 0.18px 12.54px rgba(174, 174, 192, 0.4);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    margin: 30px 10px;
+    padding: 30px;
+}
+
+footer div .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+footer div div div img {
+    height: 30px;
+}
+
+footer div .info a:not(.socialMediaIcons a) {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+footer div .info a:hover:not(.socialMediaIcons a) {
+    text-decoration: underline;
+}
+
+footer div .info .socialMediaIcons a {
+    font-size: 25px;
+    color: var(--color-2);
+}
+
+footer div .info .socialMediaIcons a:visited {
+    color: var(--color-2);
+}
+
+footer div .line {
+    width: 3px;
+    height: 127px;
+    background: var(--color-2);
+    margin: 0 20px;
+}
+
+footer #Kubecontact .contact a {
+    display: flex;
+}
+
+footer #Kubecontact .contact a, footer #Comptalibcontact .contact a {
+    font-size: 20px;
+    color: var(--color-2);
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+footer #Kubecontact .contact a i, footer #Comptalibcontact .contact a i {
+    margin-right: 10px;
+}
+
+footer #Kubecontact .contact a:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+footer #Kubecontact .info .websiteLink, footer #Kubecontact .contact i, footer #Kubecontact .info .websiteLink:visited {
+    color: var(--color-3);
+}
+
+footer #Comptalibcontact .info .websiteLink, footer #Comptalibcontact i:not(.socialMediaIcons i), footer #Comptalibcontact .info .websiteLink:visited {
+    color: var(--color-1);
+}
+
+@media (max-width: 1133px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+    footer #Kubecontact, footer #Comptalibcontact {
+        width: 600px;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 650px) {
+    footer #Kubecontact, footer #Comptalibcontact {
+        border-radius: 20.2652px;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        width: 80%;
+    }
+    footer div .info * {
+        margin-bottom: 0 !important;
+    }
+    footer div div div img {
+        height: 20px;
+    }
+    footer div .info a {
+        font-size: 11px !important;
+    }
+    footer div .line {
+        width: 1px;
+        height: 80px;
+        margin: 0 10px;
+    }
+    footer #Kubecontact .contact p, footer #Comptalibcontact p {
+        font-size: 10.1326px;
+    }
+    footer #Kubecontact .contact p:nth-child(1) {
+        margin-bottom: 10px;
+    }
+    footer #Kubecontact .contact a, footer #Comptalibcontact a {
+        font-size: 11px !important;
+    }
+}
+
+@media (max-width: 386px) {
+    footer div .line {
+        width: 1px;
+        height: 60px;
+        margin: 0 10px;
+    }
+    footer img {
+        height: 13px;
+    }
+    footer p, footer a {
+        font-size: 8px !important;
+    }
+    footer p, footer .socialMediaIcons a {
+        font-size: 10px;
+    }
+}
