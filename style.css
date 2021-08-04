@@ -1,25 +1,8 @@
-/* @font-face {
-    font-family: "Avenir Next LT Pro";
-    src: url('/sources/fonts/26301410506.ttf');
-}
-
-@font-face {
-    font-family: "Avenir Next LT Pro";
-    font-style: italic;
-    src: url('/sources/fonts/25728576873.ttf');
-}
-
-@font-face {
-    font-family: "Avenir Next LT Pro";
-    font-weight: bold;
-    src: url('/sources/fonts/25381880192.ttf');
-} */
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
 
 * {
     font-family: 'Lato', sans-serif;
-    font-weight: light;
+    font-weight: 300;
     margin: 0;
     padding: 0;
     --color-1: #4995f6;
