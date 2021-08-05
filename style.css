@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
 
 * {
-    font-family: 'Lato', sans-serif;
-    font-weight: light;
     margin: 0;
     padding: 0;
     --color-1: #4995f6;
@@ -16,6 +14,10 @@
     --gradient-2: linear-gradient(360deg, #1656FF -12.27%, #5CADF3 107.02%);
     --gradient-3: linear-gradient(180deg, #F9ED86 0%, #FDC708 100%);
     --gradient-4: linear-gradient(180deg, #FF6B00 0%, #DB2700 100%);
+}
+
+*, #contactForm #form form input:not(#submit), #contactForm #form form textarea {
+    font-family: 'montserrat', sans-serif;
 }
 
 button, input[type=submit] {
@@ -237,7 +239,7 @@ header #contactUs:hover {
 /************************************* Section Contact form *************************************/
 
 #contactForm {
-    background: url("/sources/forms/Forme1.png") no-repeat;
+    background: url("/sources/forms/Forme1.png") no-repeat, url("/sources/forms/Forme1.2.png") right top no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -245,9 +247,9 @@ header #contactUs:hover {
 
 #contactForm #specialDiscount {
     text-align: center;
-    width: 450px;
+    width: max-content;
     color: var(--color-1);
-    margin-right: 50px;
+    margin-right: 25px;
 }
 
 #contactForm #specialDiscount h2 {
@@ -259,25 +261,8 @@ header #contactUs:hover {
 
 #contactForm #specialDiscount p {
     font-size: 22px;
-    line-height: 30px;
+    line-height: 130%;
     margin: 10px 0;
-}
-
-#contactForm #specialDiscount button {
-    margin-top: 10px;
-    width: 245.63px;
-    height: 58.41px;
-    font-size: 16.0019px;
-    border-radius: 16.0019px;
-    background: #FFFFFF;
-    border: 3.20038px solid var(--color-1);
-    color: var(--color-1);
-}
-
-#contactForm #specialDiscount button:hover {
-    background: var(--color-1);
-    border: none;
-    color: #FFFFFF;
 }
 
 #contactForm #form {
@@ -321,7 +306,6 @@ header #contactUs:hover {
 }
 
 #contactForm #form form input:not(#submit), #contactForm #form form textarea {
-    font-family: 'Lato', sans-serif;
     background: rgba(249, 249, 251, 0.2);
     border: 2.40029px solid var(--color-1);
     border-radius: 14.4017px;
@@ -437,31 +421,43 @@ header #contactUs:hover {
     margin-top: 150px;
 }
 
+#Our3packs h1 {
+    margin-bottom: 10px;
+}
+
 #Our3packs p {
     font-size: 20.0024px;
-    margin-bottom: 50px;
     color: var(--color-2);
-}
-#Our3packs .packsSlide {
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
-#Our3packs img {
-    height: 200px;
-    width: 300px;
+#Our3packs .packsSlide {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 60px;
 }
 
-#Our3packs div .packInfo {
-    margin: 20px auto;
+#Our3packs .packInfo {
+    margin: auto 50px;
     width: max-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 250ms;
 }
 
-#Our3packs div div .pack h2 {
+#Our3packs .packInfo:hover {
+    transform: scale(1.2);
+}
+
+#Our3packs .packInfo img {
+    height: 200px;
+}
+
+#Our3packs div .pack h2 {
     font-weight: bold;
     font-size: 22px;
     color: #FFFFFF;
@@ -470,31 +466,31 @@ header #contactUs:hover {
     margin-bottom: 0;
 }
 
-#Our3packs div div .pack {
+#Our3packs div .pack {
     box-shadow: 2.40029px 2.40029px 12.8015px rgba(0, 0, 0, 0.4);
     border-radius: 32.0038px;
     margin-top: 20px;
     width: 330px;
 }
 
-#Our3packs div div .pack ul {
+#Our3packs div .pack ul {
     margin: 15px auto;
     list-style: inside;
 }
 
-#Our3packs div .packInfo ul {
+#Our3packs .packInfo ul {
     text-align: left;
     width: max-content;
     margin: auto;
 }
 
-#Our3packs div div .pack ul li {
+#Our3packs div .pack ul li {
     font-size: 15px;
     line-height: 240.6%;
     color: var(--color-2);
 }
 
-#Our3packs div div .pack button {
+#Our3packs div .pack button {
     border-radius: 16.0019px;
     color: #FFFFFF;
     font-weight: bold;
@@ -505,70 +501,133 @@ header #contactUs:hover {
     height: 60px;
 }
 
-#Our3packs div .pack .packContent {
+#Our3packs .pack .packContent {
     border-radius: 0 0 32.0038px 32.0038px;
 }
 
-#Our3packs div #redesignPack div h2, #Our3packs div #redesignPack div button {
+#Our3packs #redesignPack div h2, #Our3packs #redesignPack div button {
     background: var(--gradient-3);
 }
 
-#Our3packs div #redesignPack .pack .packContent {
+#Our3packs #redesignPack .pack .packContent {
     border: 3.20038px solid var(--color-6);
 }
 
-#Our3packs div #redesignPack .pack button:hover {
+#Our3packs #redesignPack .pack button:hover {
     border: 3.20038px solid var(--color-6);
     background: none;
     color: var(--color-6);
 }
 
-#Our3packs div #showcasePack .pack button:hover {
+#Our3packs #showcasePack .pack button:hover {
     border: 3.20038px solid var(--color-1);
     background: none;
     color: var(--color-1);
 }
 
-#Our3packs div #ecommercePack div h2, #Our3packs div #ecommercePack div button {
+#Our3packs #ecommercePack div h2, #Our3packs #ecommercePack div button {
     background: var(--gradient-4);
 }
 
-#Our3packs div #ecommercePack .pack .packContent {
+#Our3packs #ecommercePack .pack .packContent {
     border: 3.20038px solid var(--color-7);
 }
 
-#Our3packs div #ecommercePack .pack button:hover {
+#Our3packs #ecommercePack .pack button:hover {
     border: 3.20038px solid var(--color-7);
     background: none;
     color: var(--color-7);
 }
 
-#Our3packs div #showcasePack div h2, #Our3packs div #showcasePack div button {
+#Our3packs #showcasePack div h2, #Our3packs #showcasePack div button {
     background: var(--gradient-2);
 }
 
-#Our3packs div #showcasePack .pack button:hover {
+#Our3packs #showcasePack .pack button:hover {
     border: 3.20038px solid var(--color-1);
     background: none;
     color: var(--color-1);
 }
 
-#Our3packs div #showcasePack .pack .packContent {
+#Our3packs #showcasePack .pack .packContent {
     border: 3.20038px solid #1656FF;
 }
 
-@media (max-width: 1218px) {
-
+@media (max-width: 1200px) {
+    #Our3packs div .pack h2 {
+        font-size: 18px;
+        padding: 15px 0;
+    }
+    #Our3packs div .pack ul li {
+        font-size: 13px;
+    }
+    #Our3packs div .pack {
+        width: 290px;
+    }
+    #Our3packs div .pack button {
+        font-size: 17px;
+        width: 120px;
+        height: 40px;
+    }
+    #Our3packs .packInfo  img {
+        height: 180px;
+    }
 }
 
-@media (max-width: 1136px) {
-
+@media (max-width: 1090px) {
+    #Our3packs div .pack h2 {
+        font-size: 14px;
+    }
+    #Our3packs div .pack ul li {
+        font-size: 10px;
+    }
+    #Our3packs div .pack {
+        width: 230px;
+    }
+    #Our3packs div .pack button {
+        font-size: 14px;
+        width: 100px;
+        height: 40px;
+    }
+    #Our3packs .packInfo img {
+        height: 135px;
+    }
 }
 
 @media (max-width: 940px) {
-
+    #Our3packs p {
+        font-size: 14px;
+    }
+    #Our3packs .packsSlide {
+        width: auto;
+        overflow-x: scroll;
+        justify-content: left;
+    }
+    #Our3packs .packInfo {
+        margin: auto 5% 20px ;
+    }
+    #Our3packs .packInfo:hover {
+        transform: none;
+    }
+    #Our3packs div .pack h2 {
+        font-size: 18px;
+        padding: 15px 0;
+    }
+    #Our3packs div .pack ul li {
+        font-size: 13px;
+    }
+    #Our3packs div .pack {
+        width: 290px;
+    }
+    #Our3packs div .pack button {
+        font-size: 17px;
+        width: 120px;
+        height: 40px;
+    }
+    #Our3packs .packInfo  img {
+        height: 180px;
+    }
 }
-
 
 /************************************* Section Kube, what is it ? *************************************/
 
@@ -576,6 +635,7 @@ header #contactUs:hover {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    overflow-x: hidden;
     padding: 150px 0;
     margin-bottom: 0;
     background: url("/sources/forms/Forme5.png") no-repeat, url("/sources/forms/Forme2.png") no-repeat right;
