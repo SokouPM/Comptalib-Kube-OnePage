@@ -792,6 +792,13 @@ header #contactUs:hover {
         margin-bottom: 300px;
     }
 }
+@media (max-width: 400px) {
+
+    #KubeWhatIsIt img {
+        height: auto;
+        width: 90%;
+    }
+}
 
 
 /************************************* Section Our production *************************************/
