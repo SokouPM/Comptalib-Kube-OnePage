@@ -222,6 +222,7 @@ header #contactUs:hover {
 
 #title {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 #title p {
@@ -253,29 +254,34 @@ header #contactUs:hover {
 #contactForm #specialDiscount {
     text-align: center;
     width: max-content;
-    color: var(--color-1);
     margin-right: 25px;
+}
+
+#contactForm #specialDiscount img {
+    width: 460px;
 }
 
 #contactForm #specialDiscount h2 {
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 45px;
     margin: 10px 0;
+    color: var(--color-3);
 }
 
 #contactForm #specialDiscount p {
-    font-size: 22px;
+    font-size: 25px;
     line-height: 130%;
     margin: 10px 0;
+    color: var(--color-3);
 }
 
 #contactForm #form {
-    width: 416.82px;
+    width: 500px;
     background: #FFFFFF;
     box-shadow: 2.5443px 2.5443px 12.4335px rgba(0, 0, 0, 0.4);
     border-radius: 32.0038px;
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 #contactForm #form h2 {
@@ -298,7 +304,7 @@ header #contactUs:hover {
 
 #contactForm #form form p {
     font-weight: bold;
-    font-size: 16.0019px;
+    font-size: 20px;
     text-align: center;
     color: var(--color-2);
     margin: 10px 0 20px;
@@ -308,6 +314,11 @@ header #contactUs:hover {
     display: flex;
     justify-content: space-around;
     margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#contactForm #form form input:not(#submit):not([type=radio]) {
+    height: 25px;
 }
 
 #contactForm #form form input:not(#submit), #contactForm #form form textarea {
@@ -321,11 +332,11 @@ header #contactUs:hover {
 }
 
 #contactForm #form form #submit {
-    width: 165.75px;
-    height: 46.87px;
+    width: 170px;
+    height: 60px;
     margin: auto;
     font-weight: bold;
-    font-size: 20.0024px;
+    font-size: 22px;
     color: #FFFFFF;
     background: var(--gradient-2);
     border: none;
@@ -611,6 +622,15 @@ header #contactUs:hover {
     #Our3packs .packInfo {
         margin: auto 5% 20px;
     }
+    #Our3packs .packsSlide #ecommercePack {
+        order: 1;
+    }
+    #Our3packs .packsSlide #redesignPack {
+        order: 2;
+    }
+    #Our3packs .packsSlide #showcasePack {
+        order: 3;
+    }
     #Our3packs .packInfo:hover {
         transform: none;
     }
@@ -638,23 +658,25 @@ header #contactUs:hover {
 
 #KubeWhatIsIt {
     display: flex;
-    align-items: center;
     justify-content: center;
     overflow-x: hidden;
-    padding: 150px 0;
-    margin-bottom: 0;
+    margin-bottom: 50px;
     background: url("/sources/forms/Forme5.png") no-repeat;
 }
 
 #KubeWhatIsIt img {
-    width: 550px;
+    margin-top: 150px;
+    height: 500px;
+    width: 602px;
 }
 
 #KubeWhatIsIt #description {
     background: url("/sources/forms/Forme8.png") no-repeat;
     background-size: contain;
-    width: 800px;
-    height: 460px;
+    margin-top: 230px;
+    width: 836px;
+    height: 515px;
+    margin-left: -150px;
 }
 
 #KubeWhatIsIt #description * {
@@ -665,10 +687,10 @@ header #contactUs:hover {
 }
 
 #KubeWhatIsIt #description h2 {
-    margin-top: 20%;
+    margin-top: 17%;
     font-weight: bold;
     font-size: 35px;
-    text-align: left;
+    text-align: center;
 }
 
 #KubeWhatIsIt #description p, #KubeWhatIsIt #description a {
@@ -685,13 +707,16 @@ header #contactUs:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1287px) {
     #KubeWhatIsIt img {
-        width: 50%;
+        height: 400px;
+        width: 500px;
     }
-}
-
-@media (max-width: 1200px) {
+    #KubeWhatIsIt #description {
+        width: 730px;
+        height: 450px;
+        margin-left: -150px;
+    }
     #KubeWhatIsIt #description h2 {
         font-size: 28px;
     }
@@ -699,94 +724,69 @@ header #contactUs:hover {
         font-size: 15px;
         line-height: 20px;
     }
-    #KubeWhatIsIt #description {
-        height: 395px;
-    }
 }
 
-@media (max-width: 1050px) {
-    #KubeWhatIsIt #description {
-        height: 365px;
-    }
-}
-
-@media (max-width: 1016px) {
-    #KubeWhatIsIt {
-        padding-right: 2%;
-    }
-}
-
-@media (max-width: 962px) {
-    #KubeWhatIsIt {
-        background: url("/sources/forms/mobile/Forme5.png") no-repeat top left, url("/sources/forms/Forme2.png") no-repeat bottom right;
-    }
-    #KubeWhatIsIt #description {
-        background: none;
-    }
+@media (max-width: 1090px) {
     #KubeWhatIsIt img {
-        width: 340px;
+        height: 340px;
+        width: 400px;
+        margin-top: 127px;
     }
-    #KubeWhatIsIt #description * {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    #KubeWhatIsIt #description a {
-        width: 100%;
-        justify-self: center;
+    #KubeWhatIsIt #description {
+        width: 650px;
+        height: 400px;
+        margin-left: -100px;
+        margin-top: 165px;
     }
     #KubeWhatIsIt #description h2 {
-        margin-top: 130px;
-        font-size: 22.0867px;
-        line-height: 27px;
+        font-size: 28px;
     }
     #KubeWhatIsIt #description p, #KubeWhatIsIt #description a {
-        font-size: 11.5021px;
-        line-height: 14px;
-    }
-    #KubeWhatIsIt #description a {
-        text-decoration: none;
-        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
     }
 }
 
-
-@media (max-width: 568px) {
+@media (max-width: 940px) {
     #KubeWhatIsIt {
-        padding-right: 0;
-        min-height: 591px;
-        margin-top: 50px;
-        padding-top: 90px;
-        margin-bottom: -50px;
-        padding-bottom: 0;
+        margin-top: 20px;
         flex-direction: column;
-        background: url("/sources/forms/mobile/Forme5.png") no-repeat top left, url("/sources/forms/Forme2.png") no-repeat bottom right -350px;
+        background: url("/sources/forms/mobile/Forme5.png") no-repeat top left, url("/sources/forms/Forme2.png") no-repeat bottom right;
     }
     #KubeWhatIsIt img {
-        height: 290px;
-        margin-bottom: 20px;
+        height: 345px;
+        width: 415px;
+        margin: 100px auto 10px;
     }
     #KubeWhatIsIt #description {
         width: 90%;
-        display: flex;
-        flex-direction: column;
-    }
-    #KubeWhatIsIt #description a {
-        text-align: left;
-        width: 100%;
+        height: max-content;
+        margin: auto;
+        margin-bottom: 200px;
+        background: none;
+        text-align: center;
     }
     #KubeWhatIsIt #description h2 {
-        width: max-content;
-        margin: 10px auto;
-        font-size: 22.0867px;
-        line-height: 27px;
+        margin: 0;
+        margin-bottom: 20px;
+        font-size: 28px;
     }
     #KubeWhatIsIt #description p, #KubeWhatIsIt #description a {
-        font-size: 11.5021px;
-        line-height: 14px;
+        font-size: 15px;
+        line-height: 20px;
+        margin: 0;
+        margin-bottom: 20px;
     }
-    #KubeWhatIsIt #description a {
-        text-decoration: none;
-        font-weight: bold;
+}
+
+@media (max-width: 430px) {
+    #KubeWhatIsIt img {
+        height: auto;
+        width: 300px;
+        margin: 100px auto 10px;
+    }
+    #KubeWhatIsIt {
+        background-position: left top, -140px;
     }
 }
 
@@ -1150,32 +1150,32 @@ header #contactUs:hover {
         width: 100%;
     }
     #WhatClientsSay div .customerOpinion {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         margin: auto;
-        margin-top: 40px;
+        margin-top: 60px;
         margin-bottom: 30px;
         padding: 10px;
-        padding-top: 25px;
-        border-radius: 32.0038px
+        padding-top: 30px;
     }
     #WhatClientsSay div .customerOpinion img {
-        height: 50px;
-        width: 50px;
-        top: -29px;
+        height: 80px;
+        width: 80px;
+        top: -55px;
     }
     #WhatClientsSay div .customerOpinion .CustomerName {
-        font-size: 13px;
+        font-size: 20px;
     }
     #WhatClientsSay div .customerOpinion .selectedPack {
-        font-size: 13px;
+        font-size: 18px;
     }
     #WhatClientsSay div .customerOpinion .rating span {
-        font-size: 13px;
+        font-size: 15px;
     }
     #WhatClientsSay div .customerOpinion .message {
         margin-top: 20px;
-        font-size: 10px;
+        font-size: 13px;
+        line-height: 30px;
     }
 }
 
@@ -1202,10 +1202,6 @@ footer div .info {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-}
-
-footer div div div img {
-    height: 30px;
 }
 
 footer div .info a:not(.socialMediaIcons a) {
@@ -1235,8 +1231,13 @@ footer div .line {
     margin: 0 20px;
 }
 
-footer #Kubecontact .contact a {
+footer #Kubecontact .info div img {
+    height: 40px;
+}
+
+footer #Kubecontact .contact a, footer #Comptalibcontact .contact a {
     display: flex;
+    align-items: center;
 }
 
 footer #Kubecontact .contact a, footer #Comptalibcontact .contact a {
@@ -1258,8 +1259,22 @@ footer #Kubecontact .info .websiteLink, footer #Kubecontact .contact i, footer #
     color: var(--color-3);
 }
 
+footer #Kubecontact .contact a p:hover {
+    color: var(--color-3);
+    text-decoration: underline;
+}
+
+footer #Comptalibcontact .info div img {
+    height: 30px;
+}
+
 footer #Comptalibcontact .info .websiteLink, footer #Comptalibcontact i:not(.socialMediaIcons i), footer #Comptalibcontact .info .websiteLink:visited {
     color: var(--color-1);
+}
+
+footer #Comptalibcontact .contact a p:hover {
+    color: var(--color-1);
+    text-decoration: underline;
 }
 
 @media (max-width: 1133px) {
@@ -1285,9 +1300,6 @@ footer #Comptalibcontact .info .websiteLink, footer #Comptalibcontact i:not(.soc
     footer div .info * {
         margin-bottom: 0 !important;
     }
-    footer div div div img {
-        height: 20px;
-    }
     footer div .info a {
         font-size: 11px !important;
     }
@@ -1295,6 +1307,9 @@ footer #Comptalibcontact .info .websiteLink, footer #Comptalibcontact i:not(.soc
         width: 1px;
         height: 80px;
         margin: 0 10px;
+    }
+    footer #Kubecontact .info div img {
+        height: 25px;
     }
     footer #Kubecontact .contact p, footer #Comptalibcontact p {
         font-size: 10.1326px;
@@ -1305,6 +1320,9 @@ footer #Comptalibcontact .info .websiteLink, footer #Comptalibcontact i:not(.soc
     footer #Kubecontact .contact a, footer #Comptalibcontact a {
         font-size: 11px !important;
     }
+    footer #Comptalibcontact .info div img {
+        height: 20px;
+    }
 }
 
 @media (max-width: 386px) {
@@ -1313,14 +1331,17 @@ footer #Comptalibcontact .info .websiteLink, footer #Comptalibcontact i:not(.soc
         height: 60px;
         margin: 0 10px;
     }
-    footer img {
-        height: 13px;
-    }
     footer p, footer a {
         font-size: 8px !important;
     }
     footer p, footer .socialMediaIcons a {
         font-size: 10px;
+    }
+    footer #Kubecontact .info div img {
+        height: 15px;
+    }
+    footer #Comptalibcontact .info div img {
+        height: 13px;
     }
 }
 
@@ -1330,11 +1351,8 @@ footer #Comptalibcontact .info .websiteLink, footer #Comptalibcontact i:not(.soc
         height: 60px;
         margin: 0 10px;
     }
-    footer img {
-        height: 10px;
-    }
-    footer p, footer a {
-        font-size: 4px !important;
+    footer div .info p, footer div .info a {
+        font-size: 10px !important;
     }
     footer p, footer .socialMediaIcons a {
         font-size: 1px;
