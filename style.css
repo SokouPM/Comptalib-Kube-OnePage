@@ -778,17 +778,21 @@ header #contactUs:hover {
         margin-bottom: 20px;
     }
 }
-
-@media (max-width: 430px) {
+@media (max-width: 610px) {
+    #KubeWhatIsIt {
+        background-position: left top, -140px;
+        margin-bottom: -150px;
+    }
     #KubeWhatIsIt img {
         height: auto;
         width: 300px;
-        margin: 100px auto 10px;
+        margin: 100px auto 30px;
     }
-    #KubeWhatIsIt {
-        background-position: left top, -140px;
+    #KubeWhatIsIt #description {
+        margin-bottom: 300px;
     }
 }
+
 
 /************************************* Section Our production *************************************/
 
