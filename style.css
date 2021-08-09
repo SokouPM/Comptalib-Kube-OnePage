@@ -661,13 +661,13 @@ header #contactUs:hover {
     justify-content: center;
     overflow-x: hidden;
     margin-bottom: 50px;
-    background: url("/sources/forms/Forme5.png") no-repeat;
+    background: url("/sources/forms/Forme5.png") no-repeat, url("/sources/forms/Forme9.png") bottom right no-repeat;
 }
 
 #KubeWhatIsIt img {
     margin-top: 150px;
-    height: 500px;
-    width: 602px;
+    height: 526px;
+    width: 634px;
 }
 
 #KubeWhatIsIt #description {
@@ -705,6 +705,11 @@ header #contactUs:hover {
 
 #KubeWhatIsIt #description a:hover {
     text-decoration: underline;
+}
+@media (max-width: 1150px) {
+    #KubeWhatIsIt {
+        background: url("/sources/forms/Forme5.png") no-repeat, none;
+    }
 }
 
 @media (max-width: 1287px) {
@@ -778,6 +783,7 @@ header #contactUs:hover {
         margin-bottom: 20px;
     }
 }
+
 @media (max-width: 610px) {
     #KubeWhatIsIt {
         background-position: left top, -140px;
@@ -792,14 +798,18 @@ header #contactUs:hover {
         margin-bottom: 300px;
     }
 }
-@media (max-width: 400px) {
 
+@media (max-width: 400px) {
     #KubeWhatIsIt img {
-        height: auto;
         width: 90%;
     }
 }
 
+@media (max-width: 290px) {
+    #KubeWhatIsIt img {
+        width: 100%;
+    }
+}
 
 /************************************* Section Our production *************************************/
 
