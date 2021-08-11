@@ -1240,26 +1240,26 @@ footer div .info a:not(.socialMediaIcons a) {
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 10px;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 footer div .info a:hover:not(.socialMediaIcons a) {
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 footer div .info .socialMediaIcons a {
     font-size: 25px;
-    color: var(--color-2);
+    color: var(--color-2) !important;
 }
 
 footer div .info .socialMediaIcons a:visited {
-    color: var(--color-2);
+    color: var(--color-2) !important;
 }
 
 footer div .line {
     width: 3px;
     height: 127px;
-    background: var(--color-2);
+    background: var(--color-2) !important;
     margin: 0 20px;
 }
 
@@ -1274,8 +1274,8 @@ footer #Kubecontact .contact a, footer #Comptalibcontact .contact a {
 
 footer #Kubecontact .contact a, footer #Comptalibcontact .contact a {
     font-size: 20px;
-    color: var(--color-2);
-    text-decoration: none;
+    color: var(--color-2) !important;
+    text-decoration: none !important;
     font-weight: lighter;
 }
 
@@ -1288,12 +1288,12 @@ footer #Kubecontact .contact a:nth-child(1) {
 }
 
 footer #Kubecontact .info .websiteLink, footer #Kubecontact .contact i, footer #Kubecontact .info .websiteLink:visited {
-    color: var(--color-3);
+    color: var(--color-3) !important;
 }
 
 footer #Kubecontact .contact a p:hover {
-    color: var(--color-3);
-    text-decoration: underline;
+    color: var(--color-3) !important;
+    text-decoration: underline !important;
 }
 
 footer #Comptalibcontact .info div img {
@@ -1301,7 +1301,7 @@ footer #Comptalibcontact .info div img {
 }
 
 footer #Comptalibcontact .info .websiteLink, footer #Comptalibcontact i:not(.socialMediaIcons i), footer #Comptalibcontact .info .websiteLink:visited {
-    color: var(--color-1);
+    color: var(--color-1) !important;
 }
 
 footer #Comptalibcontact .contact a p:hover {
