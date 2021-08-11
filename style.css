@@ -194,13 +194,6 @@ header #contactUs:hover {
         font-size: 10px;
         color: var(--color-1);
     }
-    header button {
-        width: 89.12px;
-        height: 24.78px;
-        padding: 0;
-        font-size: 6px;
-        border-radius: 7.9925px;
-    }
     header #contactUs {
         margin-left: 10px;
     }
@@ -215,6 +208,25 @@ header #contactUs:hover {
 @media (max-width: 940px) {
     header #contactUs {
         margin-left: 0;
+    }
+}
+
+@media (max-width: 410px) {
+    header button {
+        width: 100px;
+        height: 30px;
+        padding: 0;
+        font-size: 8px;
+        border-radius: 7.9925px;
+    }
+}
+
+@media (max-width: 355px) {
+    header button {
+        width: 89.12px;
+        height: 24.78px;
+        padding: 0;
+        font-size: 6px;
     }
 }
 
@@ -478,7 +490,7 @@ header #contactUs:hover {
     font-size: 22px;
     color: #FFFFFF;
     border-radius: 32.0038px 32.0038px 0px 0px;
-    padding: 15px 60px;
+    padding: 15px 40px;
     margin-bottom: 0;
 }
 
@@ -611,6 +623,9 @@ header #contactUs:hover {
 }
 
 @media (max-width: 940px) {
+    #Our3packs {
+        margin-top: 80px;
+    }
     #Our3packs p {
         font-size: 14px;
     }
@@ -621,15 +636,6 @@ header #contactUs:hover {
     }
     #Our3packs .packInfo {
         margin: auto 5% 20px;
-    }
-    #Our3packs .packsSlide #ecommercePack {
-        order: 1;
-    }
-    #Our3packs .packsSlide #redesignPack {
-        order: 2;
-    }
-    #Our3packs .packsSlide #showcasePack {
-        order: 3;
     }
     #Our3packs .packInfo:hover {
         transform: none;
@@ -706,6 +712,7 @@ header #contactUs:hover {
 #KubeWhatIsIt #description a:hover {
     text-decoration: underline;
 }
+
 @media (max-width: 1150px) {
     #KubeWhatIsIt {
         background: url("/sources/forms/Forme5.png") no-repeat, none;
@@ -999,6 +1006,7 @@ header #contactUs:hover {
     }
     #Ourengagements #text {
         margin-right: 0;
+        margin-top: 30px;
         align-items: center;
         width: auto;
     }
@@ -1063,11 +1071,14 @@ header #contactUs:hover {
         flex-direction: column;
         align-items: center;
     }
+    #Ourkeyfigures div div {
+        margin-bottom: 30px;
+    }
     #Ourkeyfigures div div img {
         height: 92.49px;
     }
     #Ourkeyfigures div div p {
-        margin-top: 20px;
+        margin-top: 10px;
         font-size: 18.4056px;
         line-height: 22px;
     }
@@ -1315,14 +1326,14 @@ footer #Comptalibcontact .contact a p:hover {
         border-radius: 20.2652px;
         display: flex;
         justify-content: center;
-        padding: 20px;
-        width: 80%;
+        padding: 20px 10px;
+        width: 90%;
     }
-    footer div .info * {
+    footer #Kubecontact .info *, footer #Comptalibcontact .info * {
         margin-bottom: 0 !important;
     }
-    footer div .info a {
-        font-size: 11px !important;
+    footer #Kubecontact .info a:not(.socialMediaIcons a), footer #Comptalibcontact .info a:not(.socialMediaIcons a) {
+        font-size: 14px !important;
     }
     footer div .line {
         width: 1px;
@@ -1332,28 +1343,31 @@ footer #Comptalibcontact .contact a p:hover {
     footer #Kubecontact .info div img {
         height: 25px;
     }
-    footer #Kubecontact .contact p, footer #Comptalibcontact p {
-        font-size: 10.1326px;
+    footer #Kubecontact .contact a, footer #Comptalibcontact .contact a {
+        font-size: 15px;
     }
     footer #Kubecontact .contact p:nth-child(1) {
         margin-bottom: 10px;
     }
-    footer #Kubecontact .contact a, footer #Comptalibcontact a {
-        font-size: 11px !important;
-    }
     footer #Comptalibcontact .info div img {
         height: 20px;
     }
+    footer #Kubecontact .info .socialMediaIcons a, footer #Comptalibcontact .info .socialMediaIcons a {
+        font-size: 20px !important;
+    }
 }
 
-@media (max-width: 386px) {
+@media (max-width: 470px) {
     footer div .line {
         width: 1px;
         height: 60px;
         margin: 0 10px;
     }
-    footer p, footer a {
-        font-size: 8px !important;
+    footer #Kubecontact .info a:not(.socialMediaIcons a), footer #Comptalibcontact .info a:not(.socialMediaIcons a) {
+        font-size: 12px !important;
+    }
+    footer #Kubecontact .info .socialMediaIcons a, footer #Comptalibcontact .info .socialMediaIcons a {
+        font-size: 18px !important;
     }
     footer p, footer .socialMediaIcons a {
         font-size: 10px;
@@ -1364,18 +1378,36 @@ footer #Comptalibcontact .contact a p:hover {
     footer #Comptalibcontact .info div img {
         height: 13px;
     }
+    footer #Kubecontact .contact a *, footer #Comptalibcontact .contact a * {
+        font-size: 12px;
+    }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 386px) {
     footer div .line {
         width: 1px;
         height: 60px;
         margin: 0 10px;
     }
-    footer div .info p, footer div .info a {
+    footer #Kubecontact .info a:not(.socialMediaIcons a), footer #Comptalibcontact .info a:not(.socialMediaIcons a) {
         font-size: 10px !important;
     }
-    footer p, footer .socialMediaIcons a {
-        font-size: 1px;
+    footer #Kubecontact .info .socialMediaIcons a, footer #Comptalibcontact .info .socialMediaIcons a {
+        font-size: 15px !important;
+    }
+    footer #Kubecontact .contact a *, footer #Comptalibcontact .contact a * {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 327px) {
+    footer #Kubecontact .info a:not(.socialMediaIcons a), footer #Comptalibcontact .info a:not(.socialMediaIcons a) {
+        font-size: 8px !important;
+    }
+    footer #Kubecontact .info .socialMediaIcons a, footer #Comptalibcontact .info .socialMediaIcons a {
+        font-size: 12px !important;
+    }
+    footer #Kubecontact .contact a *, footer #Comptalibcontact .contact a * {
+        font-size: 8px;
     }
 }
